@@ -13,6 +13,11 @@ import modelo.dto.CadastroDTO;
  *
  * @author Gustavo
  */
+
+/*
+Registra usuarios ao banco de dados
+*/
+
 public class RegistraDAO {
     Connection conexao;
     PreparedStatement pstm;

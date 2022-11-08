@@ -15,6 +15,11 @@ import modelo.dto.UsuarioDTO;
  *
  * @author Gustavo
  */
+
+/*
+Entra no banco de dados e faz a verificação sobre que tipo é o usuario para poder fazer o redirecionamento 
+*/
+
 public class UsuarioDAO {
     Connection conexao;
     

@@ -12,6 +12,10 @@ import java.sql.SQLException;
  * @author Gustavo
  */
 
+/*
+Faz a conexão com o Banco de dados
+*/
+
 public class ConexaoDAO {
     
     private String usuario = "root";
