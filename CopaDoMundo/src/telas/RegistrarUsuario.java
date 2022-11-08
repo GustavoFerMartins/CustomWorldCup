@@ -18,8 +18,9 @@ public class RegistrarUsuario extends javax.swing.JFrame {
     /**
      * Creates new form Registro
      */
-    public RegistrarUsuario() {
+    public RegistrarUsuario() {        
         initComponents();
+        this.setLocationRelativeTo(null);
         Icone icon = new Icone();
         icon.InserirIcone(this);
     }

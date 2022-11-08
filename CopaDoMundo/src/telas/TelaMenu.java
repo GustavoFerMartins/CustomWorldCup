@@ -16,6 +16,7 @@ public class TelaMenu extends javax.swing.JFrame {
      */
     public TelaMenu() {
         initComponents();
+        this.setLocationRelativeTo(null);
         Icone icon = new Icone();
         icon.InserirIcone(this);
     }

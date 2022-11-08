@@ -15,6 +15,7 @@ public class SimularPartidasNaoOficial extends javax.swing.JFrame {
      */
     public SimularPartidasNaoOficial() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

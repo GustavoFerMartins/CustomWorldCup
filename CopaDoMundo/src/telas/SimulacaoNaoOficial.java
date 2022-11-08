@@ -169,7 +169,8 @@ public class SimulacaoNaoOficial extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_simularPartidasActionPerformed
 
     private void simularGruposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simularGruposActionPerformed
-        // TODO add your handling code here:
+        SimularGruposNaoOficias simularg = new SimularGruposNaoOficias();
+        simularg.setVisible(true);
     }//GEN-LAST:event_simularGruposActionPerformed
 
     private void criarGruposAleatoriosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_criarGruposAleatoriosActionPerformed

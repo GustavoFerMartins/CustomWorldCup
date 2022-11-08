@@ -13,8 +13,9 @@ public class CriarGruposAleatorios extends javax.swing.JFrame {
     /**
      * Creates new form CriarGruposAleatorios
      */
-    public CriarGruposAleatorios() {
+    public CriarGruposAleatorios() {       
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

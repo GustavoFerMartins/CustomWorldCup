@@ -8,6 +8,11 @@ package modelo.dto;
  *
  * @author Gustavo
  */
+
+/*
+Transportar dados para realizar o cadastro 
+*/   
+
 public class CadastroDTO {
     private String nome, email, senha;
 

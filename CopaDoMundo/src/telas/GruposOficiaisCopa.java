@@ -13,8 +13,9 @@ public class GruposOficiaisCopa extends javax.swing.JFrame {
     /**
      * Creates new form GruposOficiaisCopa
      */
-    public GruposOficiaisCopa() {
+    public GruposOficiaisCopa() {        
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

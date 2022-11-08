@@ -8,6 +8,9 @@ package modelo.dto;
  *
  * @author Gustavo
  */
+/*
+Transportar dados para Autenticar
+*/     
 
 public class AutenticaDTO {
     private String nome, senha; 

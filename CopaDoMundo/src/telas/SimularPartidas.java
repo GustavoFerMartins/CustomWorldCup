@@ -15,6 +15,7 @@ public class SimularPartidas extends javax.swing.JFrame {
      */
     public SimularPartidas() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

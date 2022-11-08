@@ -8,6 +8,11 @@ package modelo.dto;
  *
  * @author Gustavo
  */
+
+/*
+Transportar dados para realizar o login
+*/   
+
 public class LoginDTO {
     private String tipo, nome, email, senha;
 

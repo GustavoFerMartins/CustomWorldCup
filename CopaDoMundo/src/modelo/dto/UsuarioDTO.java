@@ -11,6 +11,11 @@ import java.sql.SQLException;
  *
  * @author Gustavo
  */
+
+/*
+Transportar dados para verificação do usuario
+*/   
+
 public class UsuarioDTO {
     private String tipo;
     private String nome;

@@ -13,8 +13,9 @@ public class SimularGruposNaoOficias extends javax.swing.JFrame {
     /**
      * Creates new form SimularGruposNaoOficias
      */
-    public SimularGruposNaoOficias() {
+    public SimularGruposNaoOficias() {       
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

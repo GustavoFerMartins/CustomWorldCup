@@ -13,8 +13,9 @@ public class CriarGruposManual extends javax.swing.JFrame {
     /**
      * Creates new form CriarGruposManual
      */
-    public CriarGruposManual() {
+    public CriarGruposManual() {        
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

@@ -13,8 +13,9 @@ public class SimularGrupos extends javax.swing.JFrame {
     /**
      * Creates new form SimularGrupos
      */
-    public SimularGrupos() {
+    public SimularGrupos() {       
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
