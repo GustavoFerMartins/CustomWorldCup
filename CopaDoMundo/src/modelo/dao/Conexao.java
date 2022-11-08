@@ -13,7 +13,7 @@ import java.sql.SQLException;
  */
 public class Conexao {
     public Connection getConnection() throws SQLException {
-        Connection conexao = DriverManager.getConnection("jdbc:mysql://localhost/usuarios", "root", "042310");
+        Connection conexao = DriverManager.getConnection("jdbc:mysql://localhost/worldcup", "root", "042310");
         return conexao;
     }
    
