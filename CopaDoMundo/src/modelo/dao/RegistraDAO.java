@@ -31,9 +31,10 @@ public class RegistraDAO {
             
             pstm.execute();
             pstm.close();
+            JOptionPane.showMessageDialog(null, "Cadastro efetuado com sucesso!");
             
         } catch (Exception erro) {
-            JOptionPane.showMessageDialog(null, "RegistraDAO" + erro);
+            JOptionPane.showMessageDialog(null, "Usuário ja existente! Tente novamente" );
         }
        
         

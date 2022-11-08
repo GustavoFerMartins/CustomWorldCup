@@ -229,12 +229,10 @@ public class RegistrarUsuario extends javax.swing.JFrame {
             RegistraDAO registraBdd = new RegistraDAO();
             registraBdd.registraUsuario(cadastroUsuario);
             
-            JOptionPane.showMessageDialog(rootPane, "Cadastro efetuado com sucesso!");
+            
+             
+        }  
         
-            TelaLogin login = new TelaLogin();
-            login.setVisible(true);
-            this.dispose();       
-        }            
     }//GEN-LAST:event_registrarActionPerformed
 
     private void emailCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailCadastroActionPerformed

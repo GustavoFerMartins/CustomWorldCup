@@ -11,6 +11,10 @@ import modelo.dto.LoginDTO;
 import javax.swing.JOptionPane;
 import modelo.dao.UsuarioDAO;
 import modelo.dto.UsuarioDTO;
+import modelo.dto.AutenticaDTO;
+import java.sql.SQLException;
+import modelo.dao.AutenticaDAO;
+import java.sql.ResultSet;
 
 public class TelaLogin extends javax.swing.JFrame {
 
@@ -221,7 +225,7 @@ public class TelaLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_sairActionPerformed
 
     private void entrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entrarActionPerformed
-        Logar();
+        Autenticar();
 
 
     }//GEN-LAST:event_entrarActionPerformed
@@ -294,8 +298,8 @@ public class TelaLogin extends javax.swing.JFrame {
             usuarios.setSenha(senha_usuario);
             UsuarioDAO usuarioDao = new UsuarioDAO();
             UsuarioDTO rsusuariodao = usuarioDao.autenticacaoUsuario(usuarios);
-            
-            if("admin".equals(rsusuariodao.getTipo())) {
+
+            if ("admin".equals(rsusuariodao.getTipo())) {
                 JOptionPane.showMessageDialog(null, "Você é um usuário admin!");
                 TelaMenu menu = new TelaMenu();
                 menu.setVisible(true);
@@ -306,8 +310,39 @@ public class TelaLogin extends javax.swing.JFrame {
                 menu.setVisible(true);
                 this.dispose();
             }
-            
+
         }
 
     }
+
+    private void Autenticar() {
+        try {
+            if (usuario.getText().matches("") || senha.getText().matches("")) {
+                JOptionPane.showMessageDialog(rootPane, "Preencha todos os campos!");
+            } else {
+                String nome_usuario, senha_usuario;
+                nome_usuario = usuario.getText();
+                senha_usuario = senha.getText();
+
+                AutenticaDTO objautentica = new AutenticaDTO();
+                objautentica.setNome(nome_usuario);
+                objautentica.setSenha(senha_usuario);
+
+                AutenticaDAO autenticadao = new AutenticaDAO();
+                ResultSet rsusuariodao = autenticadao.autenticacaoUsuario(objautentica);
+
+                if (rsusuariodao.next()) {
+                    Logar();
+                } else {
+                    JOptionPane.showMessageDialog(null, "Usuário ou Senha incorreta");
+                }
+            }
+
+            
+        } catch (SQLException erro) {
+            JOptionPane.showMessageDialog(null, "login view" + erro);
+        }
+
+    }
+
 }
