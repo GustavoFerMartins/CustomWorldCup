@@ -63,6 +63,7 @@ public class SimularPartidasNaoOficial extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Simular Partidas Oficiais");
+        setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Ubuntu Mono", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));

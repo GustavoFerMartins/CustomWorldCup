@@ -4,6 +4,7 @@
  */
 package telas;
 import icon.Icone;
+import telas.TelaLogin;
 
 /**
  *
@@ -38,10 +39,10 @@ public class TelaMenu extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        nomeUsuario = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         logOff = new botao.botao();
+        usuarioNome = new javax.swing.JFormattedTextField();
         telaFundo = new javax.swing.JDesktopPane();
         lblFundo = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -54,8 +55,6 @@ public class TelaMenu extends javax.swing.JFrame {
         simulacaoOficial = new javax.swing.JMenuItem();
         simulacaoNaoOficial = new javax.swing.JMenuItem();
         configuracao = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
-        mudarImagem = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -101,10 +100,6 @@ public class TelaMenu extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Acesso:");
 
-        nomeUsuario.setFont(new java.awt.Font("Ubuntu Mono", 0, 18)); // NOI18N
-        nomeUsuario.setForeground(new java.awt.Color(255, 255, 255));
-        nomeUsuario.setText("Nome");
-
         jLabel6.setFont(new java.awt.Font("Ubuntu Mono", 0, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Admin");
@@ -117,6 +112,15 @@ public class TelaMenu extends javax.swing.JFrame {
         logOff.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logOffActionPerformed(evt);
+            }
+        });
+
+        usuarioNome.setForeground(new java.awt.Color(255, 255, 255));
+        usuarioNome.setText("Nome");
+        usuarioNome.setFont(new java.awt.Font("Ubuntu Mono", 0, 18)); // NOI18N
+        usuarioNome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                usuarioNomeActionPerformed(evt);
             }
         });
 
@@ -139,7 +143,7 @@ public class TelaMenu extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel6)
-                            .addComponent(nomeUsuario)))
+                            .addComponent(usuarioNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(67, 67, 67)
                         .addComponent(jLabel7))
@@ -160,8 +164,8 @@ public class TelaMenu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(nomeUsuario))
-                .addGap(40, 40, 40)
+                    .addComponent(usuarioNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(44, 44, 44)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jLabel6))
@@ -255,22 +259,6 @@ public class TelaMenu extends javax.swing.JFrame {
         configuracao.setText("Configurações           |");
         configuracao.setFont(new java.awt.Font("Ubuntu Mono", 1, 24)); // NOI18N
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icon_img_add.png"))); // NOI18N
-        jMenu3.setText("Imagem Fundo");
-        jMenu3.setFont(new java.awt.Font("Ubuntu Mono", 1, 18)); // NOI18N
-
-        mudarImagem.setFont(new java.awt.Font("Ubuntu Mono", 1, 18)); // NOI18N
-        mudarImagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icon_img.png"))); // NOI18N
-        mudarImagem.setText("Mudar Imagem");
-        mudarImagem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mudarImagemActionPerformed(evt);
-            }
-        });
-        jMenu3.add(mudarImagem);
-
-        configuracao.add(jMenu3);
-
         jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/ios-8-Help-icon_43821.png"))); // NOI18N
         jMenu4.setText("Sobre");
         jMenu4.setFont(new java.awt.Font("Ubuntu Mono", 1, 18)); // NOI18N
@@ -337,10 +325,6 @@ public class TelaMenu extends javax.swing.JFrame {
         grupo.setVisible(true);
     }//GEN-LAST:event_gruposOficiaisActionPerformed
 
-    private void mudarImagemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mudarImagemActionPerformed
-        
-    }//GEN-LAST:event_mudarImagemActionPerformed
-
     private void sairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sairMouseClicked
         System.exit(0);
     }//GEN-LAST:event_sairMouseClicked
@@ -362,6 +346,11 @@ public class TelaMenu extends javax.swing.JFrame {
         login.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_logOffActionPerformed
+
+    private void usuarioNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuarioNomeActionPerformed
+
+    
+    }//GEN-LAST:event_usuarioNomeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -409,7 +398,6 @@ public class TelaMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
@@ -420,8 +408,6 @@ public class TelaMenu extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel lblFundo;
     private botao.botao logOff;
-    private javax.swing.JMenuItem mudarImagem;
-    private javax.swing.JLabel nomeUsuario;
     private javax.swing.JMenu sair;
     private javax.swing.JMenuItem selecoes;
     private javax.swing.JMenu simulacao;
@@ -429,5 +415,6 @@ public class TelaMenu extends javax.swing.JFrame {
     private javax.swing.JMenuItem simulacaoOficial;
     private javax.swing.JDesktopPane telaFundo;
     private javax.swing.JMenu times;
+    private javax.swing.JFormattedTextField usuarioNome;
     // End of variables declaration//GEN-END:variables
 }

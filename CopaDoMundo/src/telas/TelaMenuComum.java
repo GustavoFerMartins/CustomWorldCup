@@ -50,6 +50,7 @@ public class TelaMenuComum extends javax.swing.JFrame {
         sair = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Ubuntu Mono", 0, 17)); // NOI18N
         jLabel1.setText("Sistema Simulação Copa Do Mundo - Sistema Desenvolvido Por Custom World Cup");

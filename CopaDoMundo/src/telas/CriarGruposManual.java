@@ -4,6 +4,12 @@
  */
 package telas;
 
+import modelo.dao.SelecoesDAO;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
+import java.sql.ResultSet;
+import javax.swing.DefaultComboBoxModel;
+
 /**
  *
  * @author Gustavo
@@ -13,9 +19,11 @@ public class CriarGruposManual extends javax.swing.JFrame {
     /**
      * Creates new form CriarGruposManual
      */
-    public CriarGruposManual() {        
+    public CriarGruposManual() {
+
         initComponents();
         this.setLocationRelativeTo(null);
+        restaurarDadosSelecoes();
     }
 
     /**
@@ -32,22 +40,53 @@ public class CriarGruposManual extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         grupoE = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
+        selecaoDezenove = new javax.swing.JComboBox<>();
+        selecaoVinte = new javax.swing.JComboBox<>();
+        selecaoDezessete = new javax.swing.JComboBox<>();
+        selecaoDezoito = new javax.swing.JComboBox<>();
         grupoH = new javax.swing.JPanel();
         jLabel37 = new javax.swing.JLabel();
+        selecaoTrintaUm = new javax.swing.JComboBox<>();
+        selecaoVinteNove = new javax.swing.JComboBox<>();
+        selecaoTrinta = new javax.swing.JComboBox<>();
+        selecaoTrintaDois = new javax.swing.JComboBox<>();
         grupoD = new javax.swing.JPanel();
         jLabel17 = new javax.swing.JLabel();
+        selecaoDezesseis = new javax.swing.JComboBox<>();
+        selecaoTreze = new javax.swing.JComboBox<>();
+        selecaoQuatorze = new javax.swing.JComboBox<>();
+        selecaoQuinze = new javax.swing.JComboBox<>();
         grupoB = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
+        selecaoOito = new javax.swing.JComboBox<>();
+        selecaoCinco = new javax.swing.JComboBox<>();
+        selecaoSeis = new javax.swing.JComboBox<>();
+        selecaoSete = new javax.swing.JComboBox<>();
         grupoG = new javax.swing.JPanel();
         jLabel32 = new javax.swing.JLabel();
+        selecaoVinteSeis = new javax.swing.JComboBox<>();
+        selecaoVinteCinco = new javax.swing.JComboBox<>();
+        selecaoVinteSete = new javax.swing.JComboBox<>();
+        selecaoVinteOito = new javax.swing.JComboBox<>();
         grupoF = new javax.swing.JPanel();
         jLabel27 = new javax.swing.JLabel();
+        selecaoVinteUm = new javax.swing.JComboBox<>();
+        selecaoVinteQuatro = new javax.swing.JComboBox<>();
+        selecaoVinteDois = new javax.swing.JComboBox<>();
+        selecaoVinteTreis = new javax.swing.JComboBox<>();
         grupoA = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        selecaoUm = new javax.swing.JComboBox<>();
+        selecaoTres = new javax.swing.JComboBox<>();
+        selecaoDois = new javax.swing.JComboBox<>();
+        selecaoQuatro = new javax.swing.JComboBox<>();
         grupoC = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
-        salvar = new botao.botao();
+        selecaoOnze = new javax.swing.JComboBox<>();
+        selecaoDez = new javax.swing.JComboBox<>();
+        selecaoNove = new javax.swing.JComboBox<>();
+        selecaoDoze = new javax.swing.JComboBox<>();
+        salvar1 = new botao.botao();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Criar Grupos Manualmente");
@@ -72,7 +111,7 @@ public class CriarGruposManual extends javax.swing.JFrame {
             .addGroup(jPanel12Layout.createSequentialGroup()
                 .addGap(200, 200, 200)
                 .addComponent(jLabel9)
-                .addContainerGap(201, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -90,21 +129,46 @@ public class CriarGruposManual extends javax.swing.JFrame {
         jLabel22.setForeground(new java.awt.Color(255, 255, 255));
         jLabel22.setText("GRUPO E");
 
+        selecaoDezenove.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoVinte.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoDezessete.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoDezoito.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
         javax.swing.GroupLayout grupoELayout = new javax.swing.GroupLayout(grupoE);
         grupoE.setLayout(grupoELayout);
         grupoELayout.setHorizontalGroup(
             grupoELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(grupoELayout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(jLabel22)
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addGroup(grupoELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(grupoELayout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(jLabel22))
+                    .addGroup(grupoELayout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addGroup(grupoELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(selecaoVinte, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(selecaoDezoito, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(selecaoDezenove, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(selecaoDezessete, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
         grupoELayout.setVerticalGroup(
             grupoELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(grupoELayout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel22)
-                .addGap(184, 184, 184))
+                .addGap(18, 18, 18)
+                .addComponent(selecaoDezessete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoDezoito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoDezenove, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoVinte, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         grupoH.setBackground(new java.awt.Color(51, 51, 51));
@@ -115,21 +179,46 @@ public class CriarGruposManual extends javax.swing.JFrame {
         jLabel37.setForeground(new java.awt.Color(255, 255, 255));
         jLabel37.setText("GRUPO H");
 
+        selecaoTrintaUm.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoVinteNove.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoTrinta.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoTrintaDois.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
         javax.swing.GroupLayout grupoHLayout = new javax.swing.GroupLayout(grupoH);
         grupoH.setLayout(grupoHLayout);
         grupoHLayout.setHorizontalGroup(
             grupoHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(grupoHLayout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(jLabel37)
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addGroup(grupoHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(grupoHLayout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(jLabel37))
+                    .addGroup(grupoHLayout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addGroup(grupoHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(selecaoTrintaDois, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(selecaoTrinta, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(selecaoTrintaUm, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(selecaoVinteNove, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         grupoHLayout.setVerticalGroup(
             grupoHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(grupoHLayout.createSequentialGroup()
-                .addGap(19, 19, 19)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel37)
-                .addContainerGap(179, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(selecaoVinteNove, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoTrinta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoTrintaUm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoTrintaDois, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         grupoD.setBackground(new java.awt.Color(51, 51, 51));
@@ -140,21 +229,46 @@ public class CriarGruposManual extends javax.swing.JFrame {
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("GRUPO D");
 
+        selecaoDezesseis.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoTreze.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoQuatorze.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoQuinze.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
         javax.swing.GroupLayout grupoDLayout = new javax.swing.GroupLayout(grupoD);
         grupoD.setLayout(grupoDLayout);
         grupoDLayout.setHorizontalGroup(
             grupoDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(grupoDLayout.createSequentialGroup()
-                .addGap(57, 57, 57)
-                .addComponent(jLabel17)
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addGroup(grupoDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(grupoDLayout.createSequentialGroup()
+                        .addGap(57, 57, 57)
+                        .addComponent(jLabel17))
+                    .addGroup(grupoDLayout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addGroup(grupoDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(selecaoDezesseis, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(selecaoQuatorze, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(selecaoQuinze, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(selecaoTreze, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
         grupoDLayout.setVerticalGroup(
             grupoDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(grupoDLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel17)
-                .addContainerGap(179, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(selecaoTreze, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoQuatorze, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoQuinze, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoDezesseis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         grupoB.setBackground(new java.awt.Color(51, 51, 51));
@@ -165,6 +279,14 @@ public class CriarGruposManual extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("GRUPO B");
 
+        selecaoOito.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoCinco.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoSeis.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoSete.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
         javax.swing.GroupLayout grupoBLayout = new javax.swing.GroupLayout(grupoB);
         grupoB.setLayout(grupoBLayout);
         grupoBLayout.setHorizontalGroup(
@@ -172,14 +294,30 @@ public class CriarGruposManual extends javax.swing.JFrame {
             .addGroup(grupoBLayout.createSequentialGroup()
                 .addGap(56, 56, 56)
                 .addComponent(jLabel7)
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, grupoBLayout.createSequentialGroup()
+                .addContainerGap(36, Short.MAX_VALUE)
+                .addGroup(grupoBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(selecaoOito, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(selecaoSeis, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(selecaoSete, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(selecaoCinco, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33))
         );
         grupoBLayout.setVerticalGroup(
             grupoBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(grupoBLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel7)
-                .addGap(179, 179, 179))
+                .addGap(18, 18, 18)
+                .addComponent(selecaoCinco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoSeis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoSete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoOito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         grupoG.setBackground(new java.awt.Color(51, 51, 51));
@@ -190,21 +328,47 @@ public class CriarGruposManual extends javax.swing.JFrame {
         jLabel32.setForeground(new java.awt.Color(255, 255, 255));
         jLabel32.setText("GRUPO G");
 
+        selecaoVinteSeis.setEditable(true);
+        selecaoVinteSeis.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoVinteCinco.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoVinteSete.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoVinteOito.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
         javax.swing.GroupLayout grupoGLayout = new javax.swing.GroupLayout(grupoG);
         grupoG.setLayout(grupoGLayout);
         grupoGLayout.setHorizontalGroup(
             grupoGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(grupoGLayout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addComponent(jLabel32)
-                .addContainerGap(65, Short.MAX_VALUE))
+                .addGroup(grupoGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(grupoGLayout.createSequentialGroup()
+                        .addGap(49, 49, 49)
+                        .addComponent(jLabel32))
+                    .addGroup(grupoGLayout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addGroup(grupoGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(selecaoVinteOito, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(selecaoVinteSeis, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(selecaoVinteSete, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(selecaoVinteCinco, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
         grupoGLayout.setVerticalGroup(
             grupoGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(grupoGLayout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
+                .addGap(19, 19, 19)
                 .addComponent(jLabel32)
-                .addGap(179, 179, 179))
+                .addGap(18, 18, 18)
+                .addComponent(selecaoVinteCinco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoVinteSeis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoVinteSete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoVinteOito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
         );
 
         grupoF.setBackground(new java.awt.Color(51, 51, 51));
@@ -215,6 +379,14 @@ public class CriarGruposManual extends javax.swing.JFrame {
         jLabel27.setForeground(new java.awt.Color(255, 255, 255));
         jLabel27.setText("GRUPO F");
 
+        selecaoVinteUm.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoVinteQuatro.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoVinteDois.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoVinteTreis.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
         javax.swing.GroupLayout grupoFLayout = new javax.swing.GroupLayout(grupoF);
         grupoF.setLayout(grupoFLayout);
         grupoFLayout.setHorizontalGroup(
@@ -223,13 +395,29 @@ public class CriarGruposManual extends javax.swing.JFrame {
                 .addGap(56, 56, 56)
                 .addComponent(jLabel27)
                 .addContainerGap(58, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, grupoFLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(grupoFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(selecaoVinteQuatro, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(selecaoVinteDois, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(selecaoVinteTreis, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(selecaoVinteUm, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33))
         );
         grupoFLayout.setVerticalGroup(
             grupoFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(grupoFLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel27)
-                .addContainerGap(179, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(selecaoVinteUm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoVinteDois, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoVinteTreis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoVinteQuatro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         grupoA.setBackground(new java.awt.Color(51, 51, 51));
@@ -240,7 +428,23 @@ public class CriarGruposManual extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("GRUPO A");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        selecaoUm.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+        selecaoUm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                selecaoUmActionPerformed(evt);
+            }
+        });
+
+        selecaoTres.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+        selecaoTres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                selecaoTresActionPerformed(evt);
+            }
+        });
+
+        selecaoDois.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoQuatro.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout grupoALayout = new javax.swing.GroupLayout(grupoA);
         grupoA.setLayout(grupoALayout);
@@ -250,9 +454,13 @@ public class CriarGruposManual extends javax.swing.JFrame {
                 .addGap(56, 56, 56)
                 .addComponent(jLabel1)
                 .addContainerGap(58, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, grupoALayout.createSequentialGroup()
+            .addGroup(grupoALayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(grupoALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(selecaoQuatro, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(selecaoDois, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(selecaoTres, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(selecaoUm, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         grupoALayout.setVerticalGroup(
@@ -261,8 +469,14 @@ public class CriarGruposManual extends javax.swing.JFrame {
                 .addGap(19, 19, 19)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(139, Short.MAX_VALUE))
+                .addComponent(selecaoUm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoDois, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoTres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoQuatro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
         );
 
         grupoC.setBackground(new java.awt.Color(51, 51, 51));
@@ -273,29 +487,59 @@ public class CriarGruposManual extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("GRUPO C");
 
+        selecaoOnze.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoDez.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
+        selecaoNove.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+        selecaoNove.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                selecaoNoveActionPerformed(evt);
+            }
+        });
+
+        selecaoDoze.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+
         javax.swing.GroupLayout grupoCLayout = new javax.swing.GroupLayout(grupoC);
         grupoC.setLayout(grupoCLayout);
         grupoCLayout.setHorizontalGroup(
             grupoCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(grupoCLayout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(jLabel12)
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addGroup(grupoCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(grupoCLayout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(jLabel12))
+                    .addGroup(grupoCLayout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addGroup(grupoCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(selecaoDoze, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(selecaoDez, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(selecaoOnze, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(selecaoNove, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
         grupoCLayout.setVerticalGroup(
             grupoCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(grupoCLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel12)
-                .addContainerGap(179, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(selecaoNove, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoDez, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoOnze, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecaoDoze, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
-        salvar.setForeground(new java.awt.Color(255, 0, 0));
-        salvar.setText("SALVAR");
-        salvar.setFont(new java.awt.Font("Ubuntu Mono", 1, 18)); // NOI18N
-        salvar.addActionListener(new java.awt.event.ActionListener() {
+        salvar1.setForeground(new java.awt.Color(255, 0, 0));
+        salvar1.setText("SALVAR");
+        salvar1.setFont(new java.awt.Font("Ubuntu Mono", 1, 18)); // NOI18N
+        salvar1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                salvarActionPerformed(evt);
+                salvar1ActionPerformed(evt);
             }
         });
 
@@ -306,6 +550,7 @@ public class CriarGruposManual extends javax.swing.JFrame {
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(salvar1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -321,10 +566,9 @@ public class CriarGruposManual extends javax.swing.JFrame {
                             .addComponent(grupoG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(grupoD, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(grupoH, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(salvar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(40, Short.MAX_VALUE))
+                            .addComponent(grupoD, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
+                            .addComponent(grupoH, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE))))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -349,9 +593,9 @@ public class CriarGruposManual extends javax.swing.JFrame {
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(grupoH, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(grupoG, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(30, 30, 30)
-                .addComponent(salvar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addComponent(salvar1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -374,9 +618,21 @@ public class CriarGruposManual extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void salvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvarActionPerformed
-        this.dispose();
-    }//GEN-LAST:event_salvarActionPerformed
+    private void selecaoUmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selecaoUmActionPerformed
+
+    }//GEN-LAST:event_selecaoUmActionPerformed
+
+    private void salvar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvar1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_salvar1ActionPerformed
+
+    private void selecaoTresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selecaoTresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_selecaoTresActionPerformed
+
+    private void selecaoNoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selecaoNoveActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_selecaoNoveActionPerformed
 
     /**
      * @param args the command line arguments
@@ -422,7 +678,6 @@ public class CriarGruposManual extends javax.swing.JFrame {
     private javax.swing.JPanel grupoF;
     private javax.swing.JPanel grupoG;
     private javax.swing.JPanel grupoH;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel17;
@@ -434,6 +689,92 @@ public class CriarGruposManual extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
-    private botao.botao salvar;
+    private botao.botao salvar1;
+    private javax.swing.JComboBox<String> selecaoCinco;
+    private javax.swing.JComboBox<String> selecaoDez;
+    private javax.swing.JComboBox<String> selecaoDezenove;
+    private javax.swing.JComboBox<String> selecaoDezesseis;
+    private javax.swing.JComboBox<String> selecaoDezessete;
+    private javax.swing.JComboBox<String> selecaoDezoito;
+    private javax.swing.JComboBox<String> selecaoDois;
+    private javax.swing.JComboBox<String> selecaoDoze;
+    private javax.swing.JComboBox<String> selecaoNove;
+    private javax.swing.JComboBox<String> selecaoOito;
+    private javax.swing.JComboBox<String> selecaoOnze;
+    private javax.swing.JComboBox<String> selecaoQuatorze;
+    private javax.swing.JComboBox<String> selecaoQuatro;
+    private javax.swing.JComboBox<String> selecaoQuinze;
+    private javax.swing.JComboBox<String> selecaoSeis;
+    private javax.swing.JComboBox<String> selecaoSete;
+    private javax.swing.JComboBox<String> selecaoTres;
+    private javax.swing.JComboBox<String> selecaoTreze;
+    private javax.swing.JComboBox<String> selecaoTrinta;
+    private javax.swing.JComboBox<String> selecaoTrintaDois;
+    private javax.swing.JComboBox<String> selecaoTrintaUm;
+    private javax.swing.JComboBox<Object> selecaoUm;
+    private javax.swing.JComboBox<String> selecaoVinte;
+    private javax.swing.JComboBox<String> selecaoVinteCinco;
+    private javax.swing.JComboBox<String> selecaoVinteDois;
+    private javax.swing.JComboBox<String> selecaoVinteNove;
+    private javax.swing.JComboBox<String> selecaoVinteOito;
+    private javax.swing.JComboBox<String> selecaoVinteQuatro;
+    private javax.swing.JComboBox<String> selecaoVinteSeis;
+    private javax.swing.JComboBox<String> selecaoVinteSete;
+    private javax.swing.JComboBox<String> selecaoVinteTreis;
+    private javax.swing.JComboBox<String> selecaoVinteUm;
     // End of variables declaration//GEN-END:variables
+
+    /*Vector<Integer> idselecoes = new Vector<Integer>();*/
+    public void restaurarDadosSelecoes() {
+
+        try {
+            SelecoesDAO objselecao = new SelecoesDAO();
+            ResultSet rs = objselecao.selecoes();
+            while (rs.next()) {
+
+                
+                
+                
+                /*idselecoes.addElement(rs.getInt(1));*/
+                selecaoUm.addItem(rs.getString(2));
+                
+                selecaoDois.addItem(rs.getString(2));
+                selecaoTres.addItem(rs.getString(2));
+                selecaoQuatro.addItem(rs.getString(2));
+                selecaoCinco.addItem(rs.getString(2));
+                selecaoSeis.addItem(rs.getString(2));
+                selecaoSete.addItem(rs.getString(2));
+                selecaoOito.addItem(rs.getString(2));
+                selecaoNove.addItem(rs.getString(2));
+                selecaoDez.addItem(rs.getString(2));
+                selecaoOnze.addItem(rs.getString(2));
+                selecaoDoze.addItem(rs.getString(2));
+                selecaoTreze.addItem(rs.getString(2));
+                selecaoQuatorze.addItem(rs.getString(2));
+                selecaoQuinze.addItem(rs.getString(2));
+                selecaoDezesseis.addItem(rs.getString(2));
+                selecaoDezessete.addItem(rs.getString(2));
+                selecaoDezoito.addItem(rs.getString(2));
+                selecaoDezenove.addItem(rs.getString(2));
+                selecaoVinte.addItem(rs.getString(2));
+                selecaoVinteUm.addItem(rs.getString(2));
+                selecaoVinteDois.addItem(rs.getString(2));
+                selecaoVinteTreis.addItem(rs.getString(2));
+                selecaoVinteQuatro.addItem(rs.getString(2));
+                selecaoVinteCinco.addItem(rs.getString(2));
+                selecaoVinteSeis.addItem(rs.getString(2));
+                selecaoVinteSete.addItem(rs.getString(2));
+                selecaoVinteOito.addItem(rs.getString(2));
+                selecaoVinteNove.addItem(rs.getString(2));
+                selecaoTrinta.addItem(rs.getString(2));
+                selecaoTrintaUm.addItem(rs.getString(2));
+                selecaoTrintaDois.addItem(rs.getString(2));
+
+            }
+
+        } catch (SQLException erro) {
+            JOptionPane.showMessageDialog(null, "carregar bdd" + erro);
+        }
+    }
+
 }

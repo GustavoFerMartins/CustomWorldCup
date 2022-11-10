@@ -63,6 +63,7 @@ public class SimularPartidas extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Simular Partidas Oficiais");
+        setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Ubuntu Mono", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -205,9 +206,6 @@ public class SimularPartidas extends javax.swing.JFrame {
         jLabel31.setText("OITAVAS DE FINAIS");
 
         fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagensfundo/fundopartidas.jpg"))); // NOI18N
-        fundo.setMaximumSize(new java.awt.Dimension(1360, 768));
-        fundo.setMinimumSize(new java.awt.Dimension(1360, 768));
-        fundo.setPreferredSize(new java.awt.Dimension(1360, 768));
 
         sair.setForeground(new java.awt.Color(255, 0, 0));
         sair.setText("SAIR");

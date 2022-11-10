@@ -3,10 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Desktop/Downloads/JAVA/NetBeans/CopaDoMundo/src/telas/CriarGruposAleatorios.java</file>
-            <file>file:/C:/Users/Desktop/Downloads/JAVA/NetBeans/CopaDoMundo/src/modelo/dao/LoginDAO.java</file>
-            <file>file:/C:/Users/Desktop/Downloads/JAVA/NetBeans/CopaDoMundo/src/telas/SimulacaoNaoOficial.java</file>
-            <file>file:/C:/Users/Desktop/Downloads/JAVA/NetBeans/CopaDoMundo/src/modelo/dao/Conexao.java</file>
+            <file>file:/C:/Users/Desktop/Documents/Projeto/CustomWorldCup/CopaDoMundo/src/modelo/dao/SelecoesDAO.java</file>
+            <file>file:/C:/Users/Desktop/Documents/Projeto/CustomWorldCup/CopaDoMundo/src/telas/CriarGruposManual.java</file>
+            <file>file:/C:/Users/Desktop/Documents/Projeto/CustomWorldCup/CopaDoMundo/src/modelo/dto/CadastroDTO.java</file>
         </group>
     </open-files>
 </project-private>

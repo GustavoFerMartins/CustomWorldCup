@@ -28,7 +28,6 @@ public class SimulacaoNaoOficial extends javax.swing.JInternalFrame {
 
         jLabel1 = new javax.swing.JLabel();
         criarGruposManualmente = new botao.botao();
-        criarGruposAleatorios = new botao.botao();
         jLabel2 = new javax.swing.JLabel();
         simularGrupos = new botao.botao();
         simularPartidas = new botao.botao();
@@ -53,15 +52,6 @@ public class SimulacaoNaoOficial extends javax.swing.JInternalFrame {
         criarGruposManualmente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 criarGruposManualmenteActionPerformed(evt);
-            }
-        });
-
-        criarGruposAleatorios.setForeground(new java.awt.Color(255, 255, 255));
-        criarGruposAleatorios.setText("Criar Grupos Aleatóriamente");
-        criarGruposAleatorios.setFont(new java.awt.Font("Ubuntu Mono", 1, 24)); // NOI18N
-        criarGruposAleatorios.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                criarGruposAleatoriosActionPerformed(evt);
             }
         });
 
@@ -123,31 +113,27 @@ public class SimulacaoNaoOficial extends javax.swing.JInternalFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(criarGruposManualmente, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31)
-                        .addComponent(criarGruposAleatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(simularGrupos, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(simularPartidas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(sair, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(simularGrupos, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(simularPartidas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sair, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(23, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(criarGruposManualmente, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(235, 235, 235))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(42, 42, 42)
                 .addComponent(jLabel1)
-                .addGap(60, 60, 60)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(criarGruposManualmente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(criarGruposAleatorios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(75, 75, 75)
+                .addGap(59, 59, 59)
+                .addComponent(criarGruposManualmente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(76, 76, 76)
                 .addComponent(jLabel2)
                 .addGap(60, 60, 60)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -173,12 +159,6 @@ public class SimulacaoNaoOficial extends javax.swing.JInternalFrame {
         simularg.setVisible(true);
     }//GEN-LAST:event_simularGruposActionPerformed
 
-    private void criarGruposAleatoriosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_criarGruposAleatoriosActionPerformed
-        CriarGruposAleatorios novoGrupoAleatorio = new CriarGruposAleatorios();
-        novoGrupoAleatorio.setVisible(true);
-
-    }//GEN-LAST:event_criarGruposAleatoriosActionPerformed
-
     private void criarGruposManualmenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_criarGruposManualmenteActionPerformed
         CriarGruposManual novoGrupoManual = new CriarGruposManual();
         novoGrupoManual.setVisible(true);
@@ -195,7 +175,6 @@ public class SimulacaoNaoOficial extends javax.swing.JInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private botao.botao botao1;
-    private botao.botao criarGruposAleatorios;
     private botao.botao criarGruposManualmente;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
