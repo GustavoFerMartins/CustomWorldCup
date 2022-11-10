@@ -205,7 +205,7 @@ public class SimularPartidas extends javax.swing.JFrame {
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
         jLabel31.setText("OITAVAS DE FINAIS");
 
-        fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagensfundo/fundopartidas.jpg"))); // NOI18N
+        fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagensfundo/fundopartidas2.png"))); // NOI18N
 
         sair.setForeground(new java.awt.Color(255, 0, 0));
         sair.setText("SAIR");
