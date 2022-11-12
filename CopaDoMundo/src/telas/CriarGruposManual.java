@@ -8,7 +8,8 @@ import modelo.dao.SelecoesDAO;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import java.sql.ResultSet;
-import javax.swing.DefaultComboBoxModel;
+import java.util.Vector;
+
 
 /**
  *
@@ -724,20 +725,18 @@ public class CriarGruposManual extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> selecaoVinteUm;
     // End of variables declaration//GEN-END:variables
 
-    /*Vector<Integer> idselecoes = new Vector<Integer>();*/
+    
     public void restaurarDadosSelecoes() {
 
         try {
             SelecoesDAO objselecao = new SelecoesDAO();
+            
             ResultSet rs = objselecao.selecoes();
             while (rs.next()) {
-
+               
                 
                 
-                
-                /*idselecoes.addElement(rs.getInt(1));*/
                 selecaoUm.addItem(rs.getString(2));
-                
                 selecaoDois.addItem(rs.getString(2));
                 selecaoTres.addItem(rs.getString(2));
                 selecaoQuatro.addItem(rs.getString(2));

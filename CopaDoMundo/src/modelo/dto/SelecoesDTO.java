@@ -11,7 +11,7 @@ package modelo.dto;
 public class SelecoesDTO {
     private String id_selecoes;
     private String selecoes;
-    private String icone;
+ 
 
     public String getId_selecoes() {
         return id_selecoes;
@@ -19,14 +19,6 @@ public class SelecoesDTO {
 
     public void setId_selecoes(String id_selecoes) {
         this.id_selecoes = id_selecoes;
-    }
-
-    public String getIcone() {
-        return icone;
-    }
-
-    public void setIcone(String icone) {
-        this.icone = icone;
     }
 
     public String getSelecoes() {
