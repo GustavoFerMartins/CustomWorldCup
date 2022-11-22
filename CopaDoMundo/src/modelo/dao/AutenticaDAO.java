@@ -1,4 +1,3 @@
-
 package modelo.dao;
 
 import java.sql.Connection;
@@ -9,15 +8,6 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import java.sql.PreparedStatement;
 
-/**
- *
- * @author Gustavo
- */
-
-/*
-Entra no banco de dados e faz a verificação se ha o usuario no bdd
-*/
-
 public class AutenticaDAO {
 
     Connection conexao;
@@ -26,19 +16,14 @@ public class AutenticaDAO {
         conexao = new ConexaoDAO().getConnection();
         try {
             String sql = "SELECT * FROM usuarios WHERE nome = ? and senha = ?";
-            
             PreparedStatement pstm = conexao.prepareStatement(sql);
             pstm.setString(1, objautenticadto.getNome());
             pstm.setString(2, objautenticadto.getSenha());
-
             ResultSet rs = pstm.executeQuery();
             return rs;
-            
-                    
         } catch (SQLException erro) {
             JOptionPane.showMessageDialog(null, "Usuário ou Senha Incorreta! AUTENTICA DAO");
             return null;
         }
     }
-
 }

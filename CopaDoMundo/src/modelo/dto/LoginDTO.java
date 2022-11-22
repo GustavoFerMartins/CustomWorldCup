@@ -1,19 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package modelo.dto;
 
-/**
- *
- * @author Gustavo
- */
-
-/*
-Transportar dados para realizar o login
-*/   
-
 public class LoginDTO {
+
     private String tipo, nome, email, senha;
 
     public String getNome() {
@@ -48,6 +36,3 @@ public class LoginDTO {
         this.tipo = tipo;
     }
 }
-
-
-    

@@ -1,19 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package modelo.dto;
 
-/**
- *
- * @author Gustavo
- */
-/*
-Transportar dados para Autenticar
-*/     
-
 public class AutenticaDTO {
-    private String nome, senha; 
+
+    private String nome, senha;
 
     public String getNome() {
         return nome;
