@@ -59,7 +59,7 @@ public class SimularPartidas extends javax.swing.JFrame {
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         fundo = new javax.swing.JLabel();
-        sair = new code.botao();
+        sair = new code.Botao();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Simular Partidas Oficiais");
@@ -455,6 +455,6 @@ public class SimularPartidas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private code.botao sair;
+    private code.Botao sair;
     // End of variables declaration//GEN-END:variables
 }

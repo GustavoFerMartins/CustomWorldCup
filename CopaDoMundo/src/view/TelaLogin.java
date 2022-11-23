@@ -1,4 +1,3 @@
-
 package view;
 
 import code.Icone;
@@ -13,6 +12,7 @@ import java.sql.SQLException;
 import modelo.dao.AutenticaDAO;
 import java.sql.ResultSet;
 
+
 public class TelaLogin extends javax.swing.JFrame {
 
     /**
@@ -23,9 +23,9 @@ public class TelaLogin extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         Icone icon = new Icone();
         icon.InserirIcone(this);
+
     }
 
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -37,9 +37,9 @@ public class TelaLogin extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         senha = new javax.swing.JPasswordField();
         jLabel4 = new javax.swing.JLabel();
-        sair = new code.botao();
-        entrar = new code.botao();
-        registrar = new code.botao();
+        sair = new code.Botao();
+        entrar = new code.Botao();
+        registrar = new code.Botao();
         jPanel3 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
 
@@ -220,7 +220,6 @@ public class TelaLogin extends javax.swing.JFrame {
     private void entrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entrarActionPerformed
         Autenticar();
 
-
     }//GEN-LAST:event_entrarActionPerformed
 
     private void registrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarActionPerformed
@@ -265,7 +264,7 @@ public class TelaLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private code.botao entrar;
+    private code.Botao entrar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -273,27 +272,26 @@ public class TelaLogin extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private code.botao registrar;
-    private code.botao sair;
+    private code.Botao registrar;
+    private code.Botao sair;
     private javax.swing.JPasswordField senha;
     private javax.swing.JTextField usuario;
     // End of variables declaration//GEN-END:variables
 
     /*
     Logar(), verifica o tipo do Usuario, para poder saber se é comum ou admin, cadastros pela tela de cadastro so é inserido usuarios comuns
-    */
-    
+     */
     private void Logar() {
-        
+
         if (usuario.getText().matches("") || senha.getText().matches("")) {
             JOptionPane.showMessageDialog(rootPane, "Preencha todos os campos!");
         } else {
-            String nome_usuario, senha_usuario;
-            nome_usuario = usuario.getText();
-            senha_usuario = senha.getText();
+            String nomeUsuario, senhaUsuario;
+            nomeUsuario = usuario.getText();
+            senhaUsuario = senha.getText();
             LoginDTO usuarios = new LoginDTO();
-            usuarios.setNome(nome_usuario);
-            usuarios.setSenha(senha_usuario);
+            usuarios.setNome(nomeUsuario);
+            usuarios.setSenha(senhaUsuario);
             UsuarioDAO usuarioDao = new UsuarioDAO();
             UsuarioDTO rsusuariodao = usuarioDao.autenticacaoUsuario(usuarios);
 
@@ -313,42 +311,41 @@ public class TelaLogin extends javax.swing.JFrame {
 
     }
 
-    
-    
     /*
     Autentica(), ele checa se o usuario e senha esta dentro do banco de dados
-    */
+     */
     private void Autenticar() {
         try {
             /*
             Verifica se a pessoa não esqueceu de preencher algum campo
-            */
+             */
             if (usuario.getText().matches("") || senha.getText().matches("")) {
                 JOptionPane.showMessageDialog(rootPane, "Preencha todos os campos!");
             } else {
-                String nome_usuario, senha_usuario;
-                nome_usuario = usuario.getText();
-                senha_usuario = senha.getText();
-
+                String nomeUsuario, senhaUsuario;
+                nomeUsuario = usuario.getText();
+                senhaUsuario = senha.getText();
                 AutenticaDTO objautentica = new AutenticaDTO();
-                objautentica.setNome(nome_usuario);
-                objautentica.setSenha(senha_usuario);
+                objautentica.setNome(nomeUsuario);
+                objautentica.setSenha(senhaUsuario);
 
                 AutenticaDAO autenticadao = new AutenticaDAO();
                 ResultSet rsusuariodao = autenticadao.autenticacaoUsuario(objautentica);
 
                 if (rsusuariodao.next()) {
                     Logar();
+                    JOptionPane.showMessageDialog(null, "Seja-Bem Vindo " + nomeUsuario);
+
                 } else {
                     JOptionPane.showMessageDialog(null, "Usuário ou Senha incorreta");
                 }
             }
 
-            
         } catch (SQLException erro) {
             JOptionPane.showMessageDialog(null, "login view" + erro);
         }
 
     }
+
 
 }

@@ -37,14 +37,14 @@ public class RegistrarUsuario extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         senhaCadastro = new javax.swing.JPasswordField();
         usuarioCadastro = new javax.swing.JTextField();
-        registrar = new code.botao();
+        registrar = new code.Botao();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         emailCadastro = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        sair1 = new code.botao();
+        sair1 = new code.Botao();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -318,8 +318,8 @@ public class RegistrarUsuario extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
-    private code.botao registrar;
-    private code.botao sair1;
+    private code.Botao registrar;
+    private code.Botao sair1;
     private javax.swing.JPasswordField senhaCadastro;
     private javax.swing.JTextField usuarioCadastro;
     // End of variables declaration//GEN-END:variables

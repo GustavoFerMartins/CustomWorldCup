@@ -8,7 +8,7 @@ public class SelecoesDTO {
     
     @Override()
     public String toString() {
-        return String.format("%s \n", selecoes);
+        return this.selecoes;
     }
     
 

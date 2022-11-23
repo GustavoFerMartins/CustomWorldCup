@@ -1,4 +1,4 @@
-/*
+ /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
@@ -8,7 +8,7 @@ import modelo.dao.SelecoesDAO;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import java.sql.ResultSet;
-import java.util.Vector;
+
 
 
 /**
@@ -87,7 +87,7 @@ public class CriarGruposManual extends javax.swing.JFrame {
         selecaoDez = new javax.swing.JComboBox<>();
         selecaoNove = new javax.swing.JComboBox<>();
         selecaoDoze = new javax.swing.JComboBox<>();
-        salvar1 = new code.botao();
+        salvar1 = new code.Botao();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Criar Grupos Manualmente");
@@ -690,7 +690,7 @@ public class CriarGruposManual extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
-    private code.botao salvar1;
+    private code.Botao salvar1;
     private javax.swing.JComboBox<String> selecaoCinco;
     private javax.swing.JComboBox<String> selecaoDez;
     private javax.swing.JComboBox<String> selecaoDezenove;

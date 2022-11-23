@@ -4,9 +4,6 @@
  */
 package view;
 
-
-
-
 /**
  *
  * @author Gustavo
@@ -18,7 +15,8 @@ public class Selecoes extends javax.swing.JInternalFrame {
      */
     public Selecoes() {
         initComponents();
-       
+        timesOficiais();
+
     }
 
     /**
@@ -31,38 +29,38 @@ public class Selecoes extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
-        jLabel40 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel41 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        inglaterra = new javax.swing.JLabel();
+        gales = new javax.swing.JLabel();
+        ira = new javax.swing.JLabel();
+        usa = new javax.swing.JLabel();
+        camaroes = new javax.swing.JLabel();
+        servia = new javax.swing.JLabel();
+        brasil = new javax.swing.JLabel();
+        senegal = new javax.swing.JLabel();
+        argentina = new javax.swing.JLabel();
+        polonia = new javax.swing.JLabel();
+        equador = new javax.swing.JLabel();
+        costaRica = new javax.swing.JLabel();
+        mexico = new javax.swing.JLabel();
+        japao = new javax.swing.JLabel();
+        tunisia = new javax.swing.JLabel();
+        belgica = new javax.swing.JLabel();
+        suica = new javax.swing.JLabel();
+        portugual = new javax.swing.JLabel();
+        uruguai = new javax.swing.JLabel();
+        arabiaSaudita = new javax.swing.JLabel();
+        dinamarca = new javax.swing.JLabel();
+        australia = new javax.swing.JLabel();
+        franca = new javax.swing.JLabel();
+        marracos = new javax.swing.JLabel();
+        croacia = new javax.swing.JLabel();
+        coreiaDoSul = new javax.swing.JLabel();
+        alemanha = new javax.swing.JLabel();
+        espanha = new javax.swing.JLabel();
+        holanda = new javax.swing.JLabel();
+        canada = new javax.swing.JLabel();
+        gana = new javax.swing.JLabel();
+        qatar = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -76,165 +74,133 @@ public class Selecoes extends javax.swing.JInternalFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.setForeground(new java.awt.Color(51, 51, 51));
 
-        jLabel8.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/gbengenglandflag_111695.png"))); // NOI18N
-        jLabel8.setText("Inglaterra");
+        inglaterra.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        inglaterra.setForeground(new java.awt.Color(255, 255, 255));
+        inglaterra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/gbengenglandflag_111695.png"))); // NOI18N
 
-        jLabel11.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/gbwlswalesflag_111786.png"))); // NOI18N
-        jLabel11.setText("Gales");
+        gales.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        gales.setForeground(new java.awt.Color(255, 255, 255));
+        gales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/gbwlswalesflag_111786.png"))); // NOI18N
 
-        jLabel9.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/iran_icon_127909.png"))); // NOI18N
-        jLabel9.setText("Irã");
+        ira.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        ira.setForeground(new java.awt.Color(255, 255, 255));
+        ira.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/iran_icon_127909.png"))); // NOI18N
 
-        jLabel10.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/united_states_icon_127943.png"))); // NOI18N
-        jLabel10.setText("Usa");
+        usa.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        usa.setForeground(new java.awt.Color(255, 255, 255));
+        usa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/united_states_icon_127943.png"))); // NOI18N
 
-        jLabel36.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/cameroon_icon_127792.png"))); // NOI18N
-        jLabel36.setText("Camarões");
+        camaroes.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        camaroes.setForeground(new java.awt.Color(255, 255, 255));
+        camaroes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/cameroon_icon_127792.png"))); // NOI18N
 
-        jLabel34.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel34.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/serbia_icon_127829.png"))); // NOI18N
-        jLabel34.setText("Sérvia");
+        servia.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        servia.setForeground(new java.awt.Color(255, 255, 255));
+        servia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/serbia_icon_127829.png"))); // NOI18N
 
-        jLabel33.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel33.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/brazil_icon_127818.png"))); // NOI18N
-        jLabel33.setText("Brasil");
+        brasil.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        brasil.setForeground(new java.awt.Color(255, 255, 255));
+        brasil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/brazil_icon_127818.png"))); // NOI18N
 
-        jLabel5.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/senegal_icon_127802.png"))); // NOI18N
-        jLabel5.setText("Senegal");
+        senegal.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        senegal.setForeground(new java.awt.Color(255, 255, 255));
+        senegal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/senegal_icon_127802.png"))); // NOI18N
 
-        jLabel13.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/argentina_icon_127814.png"))); // NOI18N
-        jLabel13.setText("Argentina");
+        argentina.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        argentina.setForeground(new java.awt.Color(255, 255, 255));
+        argentina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/argentina_icon_127814.png"))); // NOI18N
 
-        jLabel16.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/poland_icon_127852.png"))); // NOI18N
-        jLabel16.setText("Polonia");
+        polonia.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        polonia.setForeground(new java.awt.Color(255, 255, 255));
+        polonia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/poland_icon_127852.png"))); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
-        jLabel4.setText("Equador");
+        equador.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        equador.setForeground(new java.awt.Color(255, 255, 255));
+        equador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
 
-        jLabel24.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/costa_rica_icon_127928.png"))); // NOI18N
-        jLabel24.setText("Costa Rica");
+        costaRica.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        costaRica.setForeground(new java.awt.Color(255, 255, 255));
+        costaRica.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/costa_rica_icon_127928.png"))); // NOI18N
 
-        jLabel15.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/mexico_icon_127947.png"))); // NOI18N
-        jLabel15.setText("Mexico");
+        mexico.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        mexico.setForeground(new java.awt.Color(255, 255, 255));
+        mexico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/mexico_icon_127947.png"))); // NOI18N
 
-        jLabel26.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/jpjapanflag_111832.png"))); // NOI18N
-        jLabel26.setText("Japão");
+        japao.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        japao.setForeground(new java.awt.Color(255, 255, 255));
+        japao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/jpjapanflag_111832.png"))); // NOI18N
 
-        jLabel21.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/tunisia_icon_127788.png"))); // NOI18N
-        jLabel21.setText("Tunísia");
+        tunisia.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        tunisia.setForeground(new java.awt.Color(255, 255, 255));
+        tunisia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/tunisia_icon_127788.png"))); // NOI18N
 
-        jLabel28.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel28.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/belgium_icon_127865.png"))); // NOI18N
-        jLabel28.setText("Bélgica");
+        belgica.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        belgica.setForeground(new java.awt.Color(255, 255, 255));
+        belgica.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/belgium_icon_127865.png"))); // NOI18N
 
-        jLabel35.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/switzerland_icon_127871.png"))); // NOI18N
-        jLabel35.setText("Suíça");
+        suica.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        suica.setForeground(new java.awt.Color(255, 255, 255));
+        suica.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/switzerland_icon_127871.png"))); // NOI18N
 
-        jLabel38.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel38.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/portugal_icon_127827.png"))); // NOI18N
-        jLabel38.setText("Portugal");
+        portugual.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        portugual.setForeground(new java.awt.Color(255, 255, 255));
+        portugual.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/portugal_icon_127827.png"))); // NOI18N
 
-        jLabel40.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel40.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/uyuruguayflag_111803.png"))); // NOI18N
-        jLabel40.setText("Uruguai");
+        uruguai.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        uruguai.setForeground(new java.awt.Color(255, 255, 255));
+        uruguai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/uyuruguayflag_111803.png"))); // NOI18N
 
-        jLabel14.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/saudi_arabia_icon_127908.png"))); // NOI18N
-        jLabel14.setText("Arabia Saudita");
+        arabiaSaudita.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        arabiaSaudita.setForeground(new java.awt.Color(255, 255, 255));
+        arabiaSaudita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/saudi_arabia_icon_127908.png"))); // NOI18N
 
-        jLabel20.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/denmark_icon_127836.png"))); // NOI18N
-        jLabel20.setText("Dinamarca");
+        dinamarca.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        dinamarca.setForeground(new java.awt.Color(255, 255, 255));
+        dinamarca.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/denmark_icon_127836.png"))); // NOI18N
 
-        jLabel19.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/australia_icon_127744.png"))); // NOI18N
-        jLabel19.setText("Austrália");
+        australia.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        australia.setForeground(new java.awt.Color(255, 255, 255));
+        australia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/australia_icon_127744.png"))); // NOI18N
 
-        jLabel18.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/france_icon_127830.png"))); // NOI18N
-        jLabel18.setText("França");
+        franca.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        franca.setForeground(new java.awt.Color(255, 255, 255));
+        franca.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/france_icon_127830.png"))); // NOI18N
 
-        jLabel30.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/morocco_icon_127773.png"))); // NOI18N
-        jLabel30.setText("Marrocos");
+        marracos.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        marracos.setForeground(new java.awt.Color(255, 255, 255));
+        marracos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/morocco_icon_127773.png"))); // NOI18N
 
-        jLabel31.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/croatia_icon_127840.png"))); // NOI18N
-        jLabel31.setText("Croácia");
+        croacia.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        croacia.setForeground(new java.awt.Color(255, 255, 255));
+        croacia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/croatia_icon_127840.png"))); // NOI18N
 
-        jLabel41.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel41.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/south_korea_icon_127918.png"))); // NOI18N
-        jLabel41.setText("Coreia Do Sul");
+        coreiaDoSul.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        coreiaDoSul.setForeground(new java.awt.Color(255, 255, 255));
+        coreiaDoSul.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/south_korea_icon_127918.png"))); // NOI18N
 
-        jLabel25.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/Germany_29761.png"))); // NOI18N
-        jLabel25.setText("Alemanha");
+        alemanha.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        alemanha.setForeground(new java.awt.Color(255, 255, 255));
+        alemanha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/Germany_29761.png"))); // NOI18N
 
-        jLabel23.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/spain_icon_127825.png"))); // NOI18N
-        jLabel23.setText("Espanha");
+        espanha.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        espanha.setForeground(new java.awt.Color(255, 255, 255));
+        espanha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/spain_icon_127825.png"))); // NOI18N
 
-        jLabel6.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/netherlands_icon_127838.png"))); // NOI18N
-        jLabel6.setText("Holanda");
+        holanda.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        holanda.setForeground(new java.awt.Color(255, 255, 255));
+        holanda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/netherlands_icon_127838.png"))); // NOI18N
 
-        jLabel29.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/canada_icon_127925.png"))); // NOI18N
-        jLabel29.setText("Canadá");
+        canada.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        canada.setForeground(new java.awt.Color(255, 255, 255));
+        canada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/canada_icon_127925.png"))); // NOI18N
 
-        jLabel39.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel39.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ghana_icon_127776.png"))); // NOI18N
-        jLabel39.setText("Gana");
+        gana.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        gana.setForeground(new java.awt.Color(255, 255, 255));
+        gana.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ghana_icon_127776.png"))); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
-        jLabel2.setText("Qatar");
+        qatar.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        qatar.setForeground(new java.awt.Color(255, 255, 255));
+        qatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -243,50 +209,50 @@ public class Selecoes extends javax.swing.JInternalFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel36)
-                    .addComponent(jLabel34)
-                    .addComponent(jLabel33))
+                    .addComponent(qatar)
+                    .addComponent(inglaterra)
+                    .addComponent(gales)
+                    .addComponent(ira)
+                    .addComponent(usa)
+                    .addComponent(camaroes)
+                    .addComponent(servia)
+                    .addComponent(brasil))
                 .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel24)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel23)
-                            .addComponent(jLabel16))
+                            .addComponent(costaRica)
+                            .addComponent(equador)
+                            .addComponent(espanha)
+                            .addComponent(polonia))
                         .addGap(60, 60, 60)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel15)
-                            .addComponent(jLabel26)
-                            .addComponent(jLabel28)
-                            .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(mexico)
+                            .addComponent(japao)
+                            .addComponent(belgica)
+                            .addComponent(alemanha, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel18)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel13))
+                            .addComponent(franca)
+                            .addComponent(senegal)
+                            .addComponent(arabiaSaudita)
+                            .addComponent(argentina))
                         .addGap(30, 30, 30)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel20)
-                            .addComponent(jLabel30)
-                            .addComponent(jLabel41)
-                            .addComponent(jLabel35))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                            .addComponent(dinamarca)
+                            .addComponent(marracos)
+                            .addComponent(coreiaDoSul)
+                            .addComponent(suica))))
+                .addGap(32, 32, 32)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel39)
-                    .addComponent(jLabel31)
-                    .addComponent(jLabel19)
-                    .addComponent(jLabel38)
-                    .addComponent(jLabel21)
-                    .addComponent(jLabel40)
-                    .addComponent(jLabel29))
+                    .addComponent(holanda)
+                    .addComponent(gana)
+                    .addComponent(croacia)
+                    .addComponent(australia)
+                    .addComponent(portugual)
+                    .addComponent(tunisia)
+                    .addComponent(uruguai)
+                    .addComponent(canada))
                 .addGap(30, 30, 30))
         );
         jPanel1Layout.setVerticalGroup(
@@ -294,56 +260,56 @@ public class Selecoes extends javax.swing.JInternalFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel14)
-                    .addComponent(jLabel30)
-                    .addComponent(jLabel31))
+                    .addComponent(qatar)
+                    .addComponent(arabiaSaudita)
+                    .addComponent(marracos)
+                    .addComponent(croacia))
                 .addGap(0, 0, 0)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel18)))
+                            .addComponent(inglaterra)
+                            .addComponent(franca)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel20)
-                        .addComponent(jLabel19)))
+                        .addComponent(dinamarca)
+                        .addComponent(australia)))
                 .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel41)
-                    .addComponent(jLabel38))
+                    .addComponent(gales)
+                    .addComponent(senegal)
+                    .addComponent(coreiaDoSul)
+                    .addComponent(portugual))
                 .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel13)
-                    .addComponent(jLabel35)
-                    .addComponent(jLabel39))
+                    .addComponent(ira)
+                    .addComponent(argentina)
+                    .addComponent(suica)
+                    .addComponent(gana))
                 .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel16)
-                    .addComponent(jLabel28)
-                    .addComponent(jLabel6))
+                    .addComponent(usa)
+                    .addComponent(polonia)
+                    .addComponent(belgica)
+                    .addComponent(holanda))
                 .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel36)
-                    .addComponent(jLabel23)
-                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel21))
+                    .addComponent(camaroes)
+                    .addComponent(espanha)
+                    .addComponent(alemanha, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tunisia))
                 .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel34)
-                    .addComponent(jLabel15)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel40))
+                    .addComponent(servia)
+                    .addComponent(mexico)
+                    .addComponent(equador)
+                    .addComponent(uruguai))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel33)
-                    .addComponent(jLabel24)
-                    .addComponent(jLabel26)
-                    .addComponent(jLabel29))
+                    .addComponent(brasil)
+                    .addComponent(costaRica)
+                    .addComponent(japao)
+                    .addComponent(canada))
                 .addGap(30, 30, 30))
         );
 
@@ -363,7 +329,7 @@ public class Selecoes extends javax.swing.JInternalFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(130, 130, 130)
                 .addComponent(jLabel1)
-                .addContainerGap(130, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -399,40 +365,85 @@ public class Selecoes extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel alemanha;
+    private javax.swing.JLabel arabiaSaudita;
+    private javax.swing.JLabel argentina;
+    private javax.swing.JLabel australia;
+    private javax.swing.JLabel belgica;
+    private javax.swing.JLabel brasil;
+    private javax.swing.JLabel camaroes;
+    private javax.swing.JLabel canada;
+    private javax.swing.JLabel coreiaDoSul;
+    private javax.swing.JLabel costaRica;
+    private javax.swing.JLabel croacia;
+    private javax.swing.JLabel dinamarca;
+    private javax.swing.JLabel equador;
+    private javax.swing.JLabel espanha;
+    private javax.swing.JLabel franca;
+    private javax.swing.JLabel gales;
+    private javax.swing.JLabel gana;
+    private javax.swing.JLabel holanda;
+    private javax.swing.JLabel inglaterra;
+    private javax.swing.JLabel ira;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel japao;
+    private javax.swing.JLabel marracos;
+    private javax.swing.JLabel mexico;
+    private javax.swing.JLabel polonia;
+    private javax.swing.JLabel portugual;
+    private javax.swing.JLabel qatar;
+    private javax.swing.JLabel senegal;
+    private javax.swing.JLabel servia;
+    private javax.swing.JLabel suica;
+    private javax.swing.JLabel tunisia;
+    private javax.swing.JLabel uruguai;
+    private javax.swing.JLabel usa;
     // End of variables declaration//GEN-END:variables
+    public void timesOficiais() {
+        code.SimulacaoOficial simulacao = new code.SimulacaoOficial();
+
+        qatar.setText(simulacao.grupoA[0]);
+        equador.setText(simulacao.grupoA[1]);
+        senegal.setText(simulacao.grupoA[2]);
+        holanda.setText(simulacao.grupoA[3]);
+
+        inglaterra.setText(simulacao.grupoB[0]);
+        ira.setText(simulacao.grupoB[1]);
+        usa.setText(simulacao.grupoB[2]);
+        gales.setText(simulacao.grupoB[3]);
+
+        argentina.setText(simulacao.grupoC[0]);
+        arabiaSaudita.setText(simulacao.grupoC[1]);
+        mexico.setText(simulacao.grupoC[2]);
+        polonia.setText(simulacao.grupoC[3]);
+
+        franca.setText(simulacao.grupoD[0]);
+        australia.setText(simulacao.grupoD[1]);
+        dinamarca.setText(simulacao.grupoD[2]);
+        tunisia.setText(simulacao.grupoD[3]);
+
+        espanha.setText(simulacao.grupoE[0]);
+        costaRica.setText(simulacao.grupoE[1]);
+        alemanha.setText(simulacao.grupoE[2]);
+        japao.setText(simulacao.grupoE[3]);
+
+        belgica.setText(simulacao.grupoF[0]);
+        canada.setText(simulacao.grupoF[1]);
+        marracos.setText(simulacao.grupoF[2]);
+        croacia.setText(simulacao.grupoF[3]);
+
+        brasil.setText(simulacao.grupoG[0]);
+        servia.setText(simulacao.grupoG[1]);
+        suica.setText(simulacao.grupoG[2]);
+        camaroes.setText(simulacao.grupoG[3]);
+
+        portugual.setText(simulacao.grupoH[0]);
+        gana.setText(simulacao.grupoH[1]);
+        uruguai.setText(simulacao.grupoH[2]);
+        coreiaDoSul.setText(simulacao.grupoH[3]);
+
+    }
+
 }

@@ -160,7 +160,7 @@
         <Property name="text" type="java.lang.String" value="N&#xe3;o tem um usu&#xe1;rio:"/>
       </Properties>
     </Component>
-    <Component class="code.botao" name="sair">
+    <Component class="code.Botao" name="sair">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/sair.png"/>
@@ -174,7 +174,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sairActionPerformed"/>
       </Events>
     </Component>
-    <Component class="code.botao" name="entrar">
+    <Component class="code.Botao" name="entrar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/Login_37128.png"/>
@@ -188,7 +188,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="entrarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="code.botao" name="registrar">
+    <Component class="code.Botao" name="registrar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/business_application_addmale_useradd_insert_add_user_client_2312.png"/>

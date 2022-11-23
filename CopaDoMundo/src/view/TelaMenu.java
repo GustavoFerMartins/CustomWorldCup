@@ -16,10 +16,11 @@ public class TelaMenu extends javax.swing.JFrame {
      * Creates new form TelaMenu
      */
     public TelaMenu() {
-        initComponents();
+        initComponents(); 
         this.setLocationRelativeTo(null);
         Icone icon = new Icone();
         icon.InserirIcone(this);
+        
     }
 
     /**
@@ -41,8 +42,8 @@ public class TelaMenu extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        logOff = new code.botao();
-        usuarioNome = new javax.swing.JFormattedTextField();
+        logOff = new code.Botao();
+        nomeDoUsuario = new javax.swing.JLabel();
         telaFundo = new javax.swing.JDesktopPane();
         lblFundo = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -115,14 +116,8 @@ public class TelaMenu extends javax.swing.JFrame {
             }
         });
 
-        usuarioNome.setForeground(new java.awt.Color(255, 255, 255));
-        usuarioNome.setText("Nome");
-        usuarioNome.setFont(new java.awt.Font("Ubuntu Mono", 0, 18)); // NOI18N
-        usuarioNome.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                usuarioNomeActionPerformed(evt);
-            }
-        });
+        nomeDoUsuario.setFont(new java.awt.Font("Ubuntu Mono", 0, 18)); // NOI18N
+        nomeDoUsuario.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -143,7 +138,7 @@ public class TelaMenu extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel6)
-                            .addComponent(usuarioNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(nomeDoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(67, 67, 67)
                         .addComponent(jLabel7))
@@ -164,8 +159,8 @@ public class TelaMenu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(usuarioNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44)
+                    .addComponent(nomeDoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(47, 47, 47)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jLabel6))
@@ -347,11 +342,6 @@ public class TelaMenu extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_logOffActionPerformed
 
-    private void usuarioNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuarioNomeActionPerformed
-
-    
-    }//GEN-LAST:event_usuarioNomeActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -407,7 +397,8 @@ public class TelaMenu extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel lblFundo;
-    private code.botao logOff;
+    private code.Botao logOff;
+    private javax.swing.JLabel nomeDoUsuario;
     private javax.swing.JMenu sair;
     private javax.swing.JMenuItem selecoes;
     private javax.swing.JMenu simulacao;
@@ -415,6 +406,10 @@ public class TelaMenu extends javax.swing.JFrame {
     private javax.swing.JMenuItem simulacaoOficial;
     private javax.swing.JDesktopPane telaFundo;
     private javax.swing.JMenu times;
-    private javax.swing.JFormattedTextField usuarioNome;
     // End of variables declaration//GEN-END:variables
+
+  
+
+   
+    
 }

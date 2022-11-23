@@ -38,7 +38,7 @@ public class TelaMenuComum extends javax.swing.JFrame {
         nomeUsuario = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        logOff2 = new code.botao();
+        logOff2 = new code.Botao();
         telaFundo = new javax.swing.JDesktopPane();
         lblFundo = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -321,7 +321,7 @@ public class TelaMenuComum extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JLabel lblFundo;
-    private code.botao logOff2;
+    private code.Botao logOff2;
     private javax.swing.JLabel nomeUsuario;
     private javax.swing.JMenu sair;
     private javax.swing.JMenuItem selecoes;

@@ -8,9 +8,9 @@ import java.awt.RenderingHints;
 import javax.swing.JButton;
 import javax.swing.border.EmptyBorder;
 
-public class botao extends JButton {
+public class Botao extends JButton {
 
-    public botao() {
+    public Botao() {
         setContentAreaFilled(false);
         setBorder(new EmptyBorder(5, 0, 5, 0));
         setBackground(Color.WHITE);
