@@ -25,6 +25,8 @@ public class CriarGruposManual extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         restaurarDadosSelecoes();
+        selecaoUm.setSelectedItem(null);
+        selecaoDois.setSelectedItem(null);
     }
 
     /**
@@ -283,6 +285,11 @@ public class CriarGruposManual extends javax.swing.JFrame {
         selecaoOito.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
 
         selecaoCinco.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+        selecaoCinco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                selecaoCincoActionPerformed(evt);
+            }
+        });
 
         selecaoSeis.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
 
@@ -444,8 +451,18 @@ public class CriarGruposManual extends javax.swing.JFrame {
         });
 
         selecaoDois.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+        selecaoDois.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                selecaoDoisActionPerformed(evt);
+            }
+        });
 
         selecaoQuatro.setFont(new java.awt.Font("Ubuntu Mono", 0, 14)); // NOI18N
+        selecaoQuatro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                selecaoQuatroActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout grupoALayout = new javax.swing.GroupLayout(grupoA);
         grupoA.setLayout(grupoALayout);
@@ -620,7 +637,107 @@ public class CriarGruposManual extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void selecaoUmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selecaoUmActionPerformed
-
+        
+        if(selecaoUm.getSelectedItem() == null) {
+            
+        } else if(selecaoUm.getSelectedItem().equals(selecaoDois.getSelectedItem())) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        
+            
+        } else if(selecaoUm.getSelectedItem() == selecaoTres.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoQuatro.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoCinco.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoSeis.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoSete.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoOito.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoNove.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoDez.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoOnze.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoDoze.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoTreze.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoQuatorze.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoQuinze.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoDezesseis.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoDezessete.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoDezoito.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoDezenove.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoVinte.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoVinteUm.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoVinteDois.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoVinteTreis.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoVinteQuatro.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoVinteCinco.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoVinteSeis.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoVinteSete.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoVinteOito.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoVinteNove.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoTrinta.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoTrintaUm.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoUm.getSelectedItem() == selecaoTrintaDois.getSelectedItem()) {
+            selecaoUm.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        }       
+        
+        
     }//GEN-LAST:event_selecaoUmActionPerformed
 
     private void salvar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvar1ActionPerformed
@@ -628,12 +745,122 @@ public class CriarGruposManual extends javax.swing.JFrame {
     }//GEN-LAST:event_salvar1ActionPerformed
 
     private void selecaoTresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selecaoTresActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_selecaoTresActionPerformed
 
     private void selecaoNoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selecaoNoveActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_selecaoNoveActionPerformed
+
+    private void selecaoDoisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selecaoDoisActionPerformed
+        
+        if(selecaoDois.getSelectedItem() == null) {
+            
+        } else if(selecaoDois.getSelectedItem().equals(selecaoUm.getSelectedItem())) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoTres.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoQuatro.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoCinco.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoSeis.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoSete.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoOito.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoNove.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoDez.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoOnze.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoDoze.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoTreze.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoQuatorze.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoQuinze.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoDezesseis.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoDezessete.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoDezoito.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoDezenove.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoVinte.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoVinteUm.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoVinteDois.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoVinteTreis.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoVinteQuatro.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoVinteCinco.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoVinteSeis.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoVinteSete.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoVinteOito.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoVinteNove.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoTrinta.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoTrintaUm.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+        } else if(selecaoDois.getSelectedItem() == selecaoTrintaDois.getSelectedItem()) {
+            selecaoDois.setSelectedItem(null);
+            JOptionPane.showMessageDialog(null, "Você não pode selecionar dois times iguais:");
+       
+        }        
+        
+    }//GEN-LAST:event_selecaoDoisActionPerformed
+
+    private void selecaoQuatroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selecaoQuatroActionPerformed
+        
+    }//GEN-LAST:event_selecaoQuatroActionPerformed
+
+    private void selecaoCincoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selecaoCincoActionPerformed
+        
+    }//GEN-LAST:event_selecaoCincoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -776,4 +1003,6 @@ public class CriarGruposManual extends javax.swing.JFrame {
         }
     }
 
+    
+    
 }

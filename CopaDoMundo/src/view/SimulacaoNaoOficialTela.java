@@ -161,7 +161,7 @@ public class SimulacaoNaoOficialTela extends javax.swing.JFrame {
         mexico = new javax.swing.JLabel();
         polonia = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         oitavas1.setBackground(new java.awt.Color(51, 51, 51));
         oitavas1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -1958,7 +1958,7 @@ public class SimulacaoNaoOficialTela extends javax.swing.JFrame {
 
 
     public void GrupoOficial() {
-        code.SimulacaoOficial simulacao = new code.SimulacaoOficial();
+        code.GruposOficiais simulacao = new code.GruposOficiais();
         qatar.setText(simulacao.grupoA[0]);
         equador.setText(simulacao.grupoA[1]);
         senegal.setText(simulacao.grupoA[2]);

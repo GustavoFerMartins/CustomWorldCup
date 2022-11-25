@@ -4,15 +4,18 @@
  */
 package view;
 
+import java.util.ArrayList;
+import modelo.dao.SelecoesDAO;
+import modelo.dto.SelecoesDTO;
+import code.SimulacaoCode;
+
 /**
  *
  * @author Gustavo
  */
 public class Simulacao extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Simulacao
-     */
+   
     public Simulacao() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -35,10 +38,8 @@ public class Simulacao extends javax.swing.JFrame {
         suica = new javax.swing.JLabel();
         camaroes = new javax.swing.JLabel();
         semifinal2 = new javax.swing.JPanel();
-        jLabel110 = new javax.swing.JLabel();
-        jLabel111 = new javax.swing.JLabel();
-        jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
+        semifinalBUm = new javax.swing.JLabel();
+        semifinalBDois = new javax.swing.JLabel();
         grupoD = new javax.swing.JPanel();
         D = new javax.swing.JLabel();
         franca = new javax.swing.JLabel();
@@ -52,15 +53,11 @@ public class Simulacao extends javax.swing.JFrame {
         uruguai = new javax.swing.JLabel();
         coreiaDoSul = new javax.swing.JLabel();
         quartas3 = new javax.swing.JPanel();
-        jLabel102 = new javax.swing.JLabel();
-        jLabel103 = new javax.swing.JLabel();
-        jTextField19 = new javax.swing.JTextField();
-        jTextField20 = new javax.swing.JTextField();
+        quartasCUm = new javax.swing.JLabel();
+        quartasCDois = new javax.swing.JLabel();
         final1 = new javax.swing.JPanel();
-        jLabel114 = new javax.swing.JLabel();
-        jLabel115 = new javax.swing.JLabel();
-        jTextField29 = new javax.swing.JTextField();
-        jTextField30 = new javax.swing.JTextField();
+        finalTimeUm = new javax.swing.JLabel();
+        finalTimeDois = new javax.swing.JLabel();
         grupoA = new javax.swing.JPanel();
         A = new javax.swing.JLabel();
         qatar = new javax.swing.JLabel();
@@ -70,8 +67,6 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas7 = new javax.swing.JPanel();
         oitavasGrupoG1 = new javax.swing.JLabel();
         oitavasGrupoG2 = new javax.swing.JLabel();
-        jTextField25 = new javax.swing.JTextField();
-        jTextField26 = new javax.swing.JTextField();
         grupoE = new javax.swing.JPanel();
         E = new javax.swing.JLabel();
         espanha = new javax.swing.JLabel();
@@ -81,23 +76,15 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas3 = new javax.swing.JPanel();
         oitavasGrupoC1 = new javax.swing.JLabel();
         oitavasGrupoC2 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
         quartas4 = new javax.swing.JPanel();
-        jLabel106 = new javax.swing.JLabel();
-        jLabel107 = new javax.swing.JLabel();
-        jTextField17 = new javax.swing.JTextField();
-        jTextField18 = new javax.swing.JTextField();
+        quartasDUm = new javax.swing.JLabel();
+        quartasDDois = new javax.swing.JLabel();
         oitavas8 = new javax.swing.JPanel();
         oitavasGrupoH1 = new javax.swing.JLabel();
         oitavasGrupoH2 = new javax.swing.JLabel();
-        jTextField27 = new javax.swing.JTextField();
-        jTextField28 = new javax.swing.JTextField();
         oitavas4 = new javax.swing.JPanel();
         oitavasGrupoD1 = new javax.swing.JLabel();
         oitavasGrupoD2 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
         jLabel83 = new javax.swing.JLabel();
         jLabel104 = new javax.swing.JLabel();
         grupoB = new javax.swing.JPanel();
@@ -118,17 +105,13 @@ public class Simulacao extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         jLabel118 = new javax.swing.JLabel();
         sair = new code.Botao();
-        jButton1 = new javax.swing.JButton();
+        simular = new javax.swing.JButton();
         quartas1 = new javax.swing.JPanel();
-        jLabel100 = new javax.swing.JLabel();
-        jLabel101 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
+        quartasAUm = new javax.swing.JLabel();
+        quartasADois = new javax.swing.JLabel();
         semifinal1 = new javax.swing.JPanel();
-        jLabel112 = new javax.swing.JLabel();
-        jLabel113 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
+        semifinalAUm = new javax.swing.JLabel();
+        semifinalADois = new javax.swing.JLabel();
         grupoC = new javax.swing.JPanel();
         C = new javax.swing.JLabel();
         argentina = new javax.swing.JLabel();
@@ -138,30 +121,22 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas5 = new javax.swing.JPanel();
         oitavasGrupoE1 = new javax.swing.JLabel();
         oitavasGrupoE2 = new javax.swing.JLabel();
-        jTextField21 = new javax.swing.JTextField();
-        jTextField22 = new javax.swing.JTextField();
         oitavas1 = new javax.swing.JPanel();
         oitavasGrupoA1 = new javax.swing.JLabel();
-        oitavasGrupoA1R = new javax.swing.JLabel();
         oitavasGrupoA2 = new javax.swing.JLabel();
-        oitavasGrupoA2R = new javax.swing.JLabel();
         quartas2 = new javax.swing.JPanel();
-        jLabel108 = new javax.swing.JLabel();
-        jLabel109 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
+        quartasBUm = new javax.swing.JLabel();
+        quartasBDois = new javax.swing.JLabel();
         oitavas6 = new javax.swing.JPanel();
         oitavasGrupoF1 = new javax.swing.JLabel();
         oitavasGrupoF2 = new javax.swing.JLabel();
-        jTextField23 = new javax.swing.JTextField();
-        jTextField24 = new javax.swing.JTextField();
         oitavas2 = new javax.swing.JPanel();
         oitavasGrupoB1 = new javax.swing.JLabel();
         oitavasGrupoB2 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        campeao = new javax.swing.JPanel();
+        timeCampeao = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         grupoG.setBackground(new java.awt.Color(51, 51, 51));
         grupoG.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -225,29 +200,11 @@ public class Simulacao extends javax.swing.JFrame {
         semifinal2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         semifinal2.setPreferredSize(new java.awt.Dimension(170, 216));
 
-        jLabel110.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel110.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel110.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
-        jLabel110.setText("Time 1");
+        semifinalBUm.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        semifinalBUm.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel111.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel111.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel111.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
-        jLabel111.setText("Time 2");
-
-        jTextField15.setText("0");
-        jTextField15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField15ActionPerformed(evt);
-            }
-        });
-
-        jTextField16.setText("0");
-        jTextField16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField16ActionPerformed(evt);
-            }
-        });
+        semifinalBDois.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        semifinalBDois.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout semifinal2Layout = new javax.swing.GroupLayout(semifinal2);
         semifinal2.setLayout(semifinal2Layout);
@@ -256,28 +213,18 @@ public class Simulacao extends javax.swing.JFrame {
             .addGroup(semifinal2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(semifinal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(semifinal2Layout.createSequentialGroup()
-                        .addComponent(jLabel110)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(semifinal2Layout.createSequentialGroup()
-                        .addComponent(jLabel111)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(semifinalBUm)
+                    .addComponent(semifinalBDois))
+                .addContainerGap(175, Short.MAX_VALUE))
         );
         semifinal2Layout.setVerticalGroup(
             semifinal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, semifinal2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(semifinal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel110)
-                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(semifinalBUm)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(semifinal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel111)
-                    .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addComponent(semifinalBDois)
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         grupoD.setBackground(new java.awt.Color(51, 51, 51));
@@ -405,29 +352,11 @@ public class Simulacao extends javax.swing.JFrame {
         quartas3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         quartas3.setPreferredSize(new java.awt.Dimension(170, 216));
 
-        jLabel102.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel102.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel102.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
-        jLabel102.setText("Time 1");
+        quartasCUm.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        quartasCUm.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel103.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel103.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel103.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
-        jLabel103.setText("Time 2");
-
-        jTextField19.setText("0");
-        jTextField19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField19ActionPerformed(evt);
-            }
-        });
-
-        jTextField20.setText("0");
-        jTextField20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField20ActionPerformed(evt);
-            }
-        });
+        quartasCDois.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        quartasCDois.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout quartas3Layout = new javax.swing.GroupLayout(quartas3);
         quartas3.setLayout(quartas3Layout);
@@ -436,47 +365,29 @@ public class Simulacao extends javax.swing.JFrame {
             .addGroup(quartas3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(quartas3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(quartas3Layout.createSequentialGroup()
-                        .addComponent(jLabel102)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
-                        .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(quartas3Layout.createSequentialGroup()
-                        .addComponent(jLabel103)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
-                        .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(quartasCUm)
+                    .addComponent(quartasCDois))
+                .addContainerGap(172, Short.MAX_VALUE))
         );
         quartas3Layout.setVerticalGroup(
             quartas3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quartas3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(quartas3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel102)
-                    .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(quartasCUm)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(quartas3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel103)
-                    .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addComponent(quartasCDois)
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         final1.setBackground(new java.awt.Color(51, 51, 51));
         final1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         final1.setPreferredSize(new java.awt.Dimension(170, 216));
 
-        jLabel114.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel114.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel114.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
-        jLabel114.setText("Time1");
+        finalTimeUm.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        finalTimeUm.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel115.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel115.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel115.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
-        jLabel115.setText("Time2");
-
-        jTextField29.setText("0");
-
-        jTextField30.setText("0");
+        finalTimeDois.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        finalTimeDois.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout final1Layout = new javax.swing.GroupLayout(final1);
         final1.setLayout(final1Layout);
@@ -485,28 +396,18 @@ public class Simulacao extends javax.swing.JFrame {
             .addGroup(final1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(final1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(final1Layout.createSequentialGroup()
-                        .addComponent(jLabel114)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
-                        .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(final1Layout.createSequentialGroup()
-                        .addComponent(jLabel115)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
-                        .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(finalTimeUm)
+                    .addComponent(finalTimeDois))
+                .addContainerGap(175, Short.MAX_VALUE))
         );
         final1Layout.setVerticalGroup(
             final1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, final1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(final1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel114)
-                    .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(finalTimeUm)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(final1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel115)
-                    .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addComponent(finalTimeDois)
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         grupoA.setBackground(new java.awt.Color(51, 51, 51));
@@ -573,27 +474,9 @@ public class Simulacao extends javax.swing.JFrame {
 
         oitavasGrupoG1.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
         oitavasGrupoG1.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoG1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
-        oitavasGrupoG1.setText("Time 1");
 
         oitavasGrupoG2.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
         oitavasGrupoG2.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoG2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
-        oitavasGrupoG2.setText("Time 2");
-
-        jTextField25.setText("0");
-        jTextField25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField25ActionPerformed(evt);
-            }
-        });
-
-        jTextField26.setText("0");
-        jTextField26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField26ActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout oitavas7Layout = new javax.swing.GroupLayout(oitavas7);
         oitavas7.setLayout(oitavas7Layout);
@@ -602,28 +485,18 @@ public class Simulacao extends javax.swing.JFrame {
             .addGroup(oitavas7Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(oitavas7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(oitavas7Layout.createSequentialGroup()
-                        .addComponent(oitavasGrupoG1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(oitavas7Layout.createSequentialGroup()
-                        .addComponent(oitavasGrupoG2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(oitavasGrupoG1)
+                    .addComponent(oitavasGrupoG2))
+                .addContainerGap(175, Short.MAX_VALUE))
         );
         oitavas7Layout.setVerticalGroup(
             oitavas7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, oitavas7Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(oitavas7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(oitavasGrupoG1)
-                    .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(oitavasGrupoG1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(oitavas7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(oitavasGrupoG2)
-                    .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addComponent(oitavasGrupoG2)
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         grupoE.setBackground(new java.awt.Color(51, 51, 51));
@@ -696,17 +569,9 @@ public class Simulacao extends javax.swing.JFrame {
 
         oitavasGrupoC1.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
         oitavasGrupoC1.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoC1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
-        oitavasGrupoC1.setText("Time 1");
 
         oitavasGrupoC2.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
         oitavasGrupoC2.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoC2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
-        oitavasGrupoC2.setText("Time 2");
-
-        jTextField5.setText("0");
-
-        jTextField6.setText("0");
 
         javax.swing.GroupLayout oitavas3Layout = new javax.swing.GroupLayout(oitavas3);
         oitavas3.setLayout(oitavas3Layout);
@@ -715,57 +580,29 @@ public class Simulacao extends javax.swing.JFrame {
             .addGroup(oitavas3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(oitavas3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(oitavas3Layout.createSequentialGroup()
-                        .addComponent(oitavasGrupoC1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(oitavas3Layout.createSequentialGroup()
-                        .addComponent(oitavasGrupoC2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(oitavasGrupoC1)
+                    .addComponent(oitavasGrupoC2))
+                .addContainerGap(175, Short.MAX_VALUE))
         );
         oitavas3Layout.setVerticalGroup(
             oitavas3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, oitavas3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(oitavas3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(oitavasGrupoC1)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(oitavasGrupoC1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(oitavas3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(oitavasGrupoC2)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addComponent(oitavasGrupoC2)
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         quartas4.setBackground(new java.awt.Color(51, 51, 51));
         quartas4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         quartas4.setPreferredSize(new java.awt.Dimension(170, 216));
 
-        jLabel106.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel106.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel106.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
-        jLabel106.setText("Time 1");
+        quartasDUm.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        quartasDUm.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel107.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel107.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel107.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
-        jLabel107.setText("Time 2");
-
-        jTextField17.setText("0");
-        jTextField17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField17ActionPerformed(evt);
-            }
-        });
-
-        jTextField18.setText("0");
-        jTextField18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField18ActionPerformed(evt);
-            }
-        });
+        quartasDDois.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        quartasDDois.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout quartas4Layout = new javax.swing.GroupLayout(quartas4);
         quartas4.setLayout(quartas4Layout);
@@ -774,28 +611,18 @@ public class Simulacao extends javax.swing.JFrame {
             .addGroup(quartas4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(quartas4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(quartas4Layout.createSequentialGroup()
-                        .addComponent(jLabel106)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(quartas4Layout.createSequentialGroup()
-                        .addComponent(jLabel107)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(quartasDUm)
+                    .addComponent(quartasDDois))
+                .addContainerGap(175, Short.MAX_VALUE))
         );
         quartas4Layout.setVerticalGroup(
             quartas4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quartas4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(quartas4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel106)
-                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(quartasDUm)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(quartas4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel107)
-                    .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addComponent(quartasDDois)
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         oitavas8.setBackground(new java.awt.Color(51, 51, 51));
@@ -804,27 +631,9 @@ public class Simulacao extends javax.swing.JFrame {
 
         oitavasGrupoH1.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
         oitavasGrupoH1.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoH1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
-        oitavasGrupoH1.setText("Time 1");
 
         oitavasGrupoH2.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
         oitavasGrupoH2.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoH2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
-        oitavasGrupoH2.setText("Time 2");
-
-        jTextField27.setText("0");
-        jTextField27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField27ActionPerformed(evt);
-            }
-        });
-
-        jTextField28.setText("0");
-        jTextField28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField28ActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout oitavas8Layout = new javax.swing.GroupLayout(oitavas8);
         oitavas8.setLayout(oitavas8Layout);
@@ -833,28 +642,18 @@ public class Simulacao extends javax.swing.JFrame {
             .addGroup(oitavas8Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(oitavas8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(oitavas8Layout.createSequentialGroup()
-                        .addComponent(oitavasGrupoH1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(oitavas8Layout.createSequentialGroup()
-                        .addComponent(oitavasGrupoH2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(oitavasGrupoH1)
+                    .addComponent(oitavasGrupoH2))
+                .addContainerGap(175, Short.MAX_VALUE))
         );
         oitavas8Layout.setVerticalGroup(
             oitavas8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, oitavas8Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(oitavas8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(oitavasGrupoH1)
-                    .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(oitavasGrupoH1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(oitavas8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(oitavasGrupoH2)
-                    .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addComponent(oitavasGrupoH2)
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         oitavas4.setBackground(new java.awt.Color(51, 51, 51));
@@ -863,17 +662,9 @@ public class Simulacao extends javax.swing.JFrame {
 
         oitavasGrupoD1.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
         oitavasGrupoD1.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoD1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
-        oitavasGrupoD1.setText("Time 1");
 
         oitavasGrupoD2.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
         oitavasGrupoD2.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoD2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
-        oitavasGrupoD2.setText("Time 2");
-
-        jTextField7.setText("0");
-
-        jTextField8.setText("0");
 
         javax.swing.GroupLayout oitavas4Layout = new javax.swing.GroupLayout(oitavas4);
         oitavas4.setLayout(oitavas4Layout);
@@ -882,28 +673,18 @@ public class Simulacao extends javax.swing.JFrame {
             .addGroup(oitavas4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(oitavas4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(oitavas4Layout.createSequentialGroup()
-                        .addComponent(oitavasGrupoD1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(oitavas4Layout.createSequentialGroup()
-                        .addComponent(oitavasGrupoD2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(oitavasGrupoD1)
+                    .addComponent(oitavasGrupoD2))
+                .addContainerGap(175, Short.MAX_VALUE))
         );
         oitavas4Layout.setVerticalGroup(
             oitavas4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, oitavas4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(oitavas4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(oitavasGrupoD1)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(oitavasGrupoD1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(oitavas4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(oitavasGrupoD2)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addComponent(oitavasGrupoD2)
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         jLabel83.setFont(new java.awt.Font("Ubuntu Mono", 0, 18)); // NOI18N
@@ -1064,10 +845,10 @@ public class Simulacao extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("SIMULAR JOGOS");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        simular.setText("SIMULAR JOGOS");
+        simular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                simularActionPerformed(evt);
             }
         });
 
@@ -1075,24 +856,11 @@ public class Simulacao extends javax.swing.JFrame {
         quartas1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         quartas1.setPreferredSize(new java.awt.Dimension(170, 216));
 
-        jLabel100.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel100.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel100.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
-        jLabel100.setText("Time 1");
+        quartasAUm.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        quartasAUm.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel101.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel101.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel101.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
-        jLabel101.setText("Time 2");
-
-        jTextField9.setText("0");
-
-        jTextField10.setText("0");
-        jTextField10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField10ActionPerformed(evt);
-            }
-        });
+        quartasADois.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        quartasADois.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout quartas1Layout = new javax.swing.GroupLayout(quartas1);
         quartas1.setLayout(quartas1Layout);
@@ -1101,57 +869,29 @@ public class Simulacao extends javax.swing.JFrame {
             .addGroup(quartas1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(quartas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(quartas1Layout.createSequentialGroup()
-                        .addComponent(jLabel100)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(quartas1Layout.createSequentialGroup()
-                        .addComponent(jLabel101)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(quartasAUm, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)
+                    .addComponent(quartasADois, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE))
                 .addContainerGap())
         );
         quartas1Layout.setVerticalGroup(
             quartas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quartas1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(quartas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel100)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(quartas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel101)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addComponent(quartasAUm, javax.swing.GroupLayout.DEFAULT_SIZE, 20, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(quartasADois, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12))
         );
 
         semifinal1.setBackground(new java.awt.Color(51, 51, 51));
         semifinal1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         semifinal1.setPreferredSize(new java.awt.Dimension(170, 216));
 
-        jLabel112.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel112.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel112.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
-        jLabel112.setText("Time 1");
+        semifinalAUm.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        semifinalAUm.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel113.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel113.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel113.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
-        jLabel113.setText("Time 2");
-
-        jTextField11.setText("0");
-        jTextField11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField11ActionPerformed(evt);
-            }
-        });
-
-        jTextField12.setText("0");
-        jTextField12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField12ActionPerformed(evt);
-            }
-        });
+        semifinalADois.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        semifinalADois.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout semifinal1Layout = new javax.swing.GroupLayout(semifinal1);
         semifinal1.setLayout(semifinal1Layout);
@@ -1160,28 +900,18 @@ public class Simulacao extends javax.swing.JFrame {
             .addGroup(semifinal1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(semifinal1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(semifinal1Layout.createSequentialGroup()
-                        .addComponent(jLabel112)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(semifinal1Layout.createSequentialGroup()
-                        .addComponent(jLabel113)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(semifinalAUm)
+                    .addComponent(semifinalADois))
+                .addContainerGap(175, Short.MAX_VALUE))
         );
         semifinal1Layout.setVerticalGroup(
             semifinal1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, semifinal1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(semifinal1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel112)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(semifinalAUm)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(semifinal1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel113)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(semifinalADois)
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         grupoC.setBackground(new java.awt.Color(51, 51, 51));
@@ -1249,27 +979,9 @@ public class Simulacao extends javax.swing.JFrame {
 
         oitavasGrupoE1.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
         oitavasGrupoE1.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoE1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
-        oitavasGrupoE1.setText("Time 1");
 
         oitavasGrupoE2.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
         oitavasGrupoE2.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoE2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
-        oitavasGrupoE2.setText("Time 2");
-
-        jTextField21.setText("0");
-        jTextField21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField21ActionPerformed(evt);
-            }
-        });
-
-        jTextField22.setText("0");
-        jTextField22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField22ActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout oitavas5Layout = new javax.swing.GroupLayout(oitavas5);
         oitavas5.setLayout(oitavas5Layout);
@@ -1278,28 +990,18 @@ public class Simulacao extends javax.swing.JFrame {
             .addGroup(oitavas5Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(oitavas5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(oitavas5Layout.createSequentialGroup()
-                        .addComponent(oitavasGrupoE1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(oitavas5Layout.createSequentialGroup()
-                        .addComponent(oitavasGrupoE2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(oitavasGrupoE1)
+                    .addComponent(oitavasGrupoE2))
+                .addContainerGap(175, Short.MAX_VALUE))
         );
         oitavas5Layout.setVerticalGroup(
             oitavas5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, oitavas5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(oitavas5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(oitavasGrupoE1)
-                    .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(oitavasGrupoE1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(oitavas5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(oitavasGrupoE2)
-                    .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addComponent(oitavasGrupoE2)
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         oitavas1.setBackground(new java.awt.Color(51, 51, 51));
@@ -1308,21 +1010,9 @@ public class Simulacao extends javax.swing.JFrame {
 
         oitavasGrupoA1.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
         oitavasGrupoA1.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
-        oitavasGrupoA1.setText("Time 2");
-
-        oitavasGrupoA1R.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        oitavasGrupoA1R.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoA1R.setText("0");
 
         oitavasGrupoA2.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
         oitavasGrupoA2.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoA2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
-        oitavasGrupoA2.setText("Time 1");
-
-        oitavasGrupoA2R.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        oitavasGrupoA2R.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoA2R.setText("0");
 
         javax.swing.GroupLayout oitavas1Layout = new javax.swing.GroupLayout(oitavas1);
         oitavas1.setLayout(oitavas1Layout);
@@ -1331,57 +1021,29 @@ public class Simulacao extends javax.swing.JFrame {
             .addGroup(oitavas1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(oitavas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(oitavas1Layout.createSequentialGroup()
-                        .addComponent(oitavasGrupoA2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(oitavasGrupoA2R))
-                    .addGroup(oitavas1Layout.createSequentialGroup()
-                        .addComponent(oitavasGrupoA1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(oitavasGrupoA1R)))
+                    .addComponent(oitavasGrupoA1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(oitavasGrupoA2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         oitavas1Layout.setVerticalGroup(
             oitavas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, oitavas1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(oitavas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(oitavasGrupoA1)
-                    .addComponent(oitavasGrupoA1R))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(oitavas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(oitavasGrupoA2)
-                    .addComponent(oitavasGrupoA2R))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addComponent(oitavasGrupoA1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(oitavasGrupoA2, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         quartas2.setBackground(new java.awt.Color(51, 51, 51));
         quartas2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         quartas2.setPreferredSize(new java.awt.Dimension(170, 216));
 
-        jLabel108.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel108.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel108.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
-        jLabel108.setText("Time 1");
+        quartasBUm.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        quartasBUm.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel109.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
-        jLabel109.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel109.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
-        jLabel109.setText("Time 2");
-
-        jTextField13.setText("0");
-        jTextField13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField13ActionPerformed(evt);
-            }
-        });
-
-        jTextField14.setText("0");
-        jTextField14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField14ActionPerformed(evt);
-            }
-        });
+        quartasBDois.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        quartasBDois.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout quartas2Layout = new javax.swing.GroupLayout(quartas2);
         quartas2.setLayout(quartas2Layout);
@@ -1390,28 +1052,18 @@ public class Simulacao extends javax.swing.JFrame {
             .addGroup(quartas2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(quartas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(quartas2Layout.createSequentialGroup()
-                        .addComponent(jLabel108)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(quartas2Layout.createSequentialGroup()
-                        .addComponent(jLabel109)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(quartasBUm)
+                    .addComponent(quartasBDois))
+                .addContainerGap(175, Short.MAX_VALUE))
         );
         quartas2Layout.setVerticalGroup(
             quartas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, quartas2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(quartas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel108)
-                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(quartasBUm)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(quartas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel109)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addComponent(quartasBDois)
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         oitavas6.setBackground(new java.awt.Color(51, 51, 51));
@@ -1420,27 +1072,9 @@ public class Simulacao extends javax.swing.JFrame {
 
         oitavasGrupoF1.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
         oitavasGrupoF1.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoF1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
-        oitavasGrupoF1.setText("Time 1");
 
         oitavasGrupoF2.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
         oitavasGrupoF2.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoF2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
-        oitavasGrupoF2.setText("Time 2");
-
-        jTextField23.setText("0");
-        jTextField23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField23ActionPerformed(evt);
-            }
-        });
-
-        jTextField24.setText("0");
-        jTextField24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField24ActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout oitavas6Layout = new javax.swing.GroupLayout(oitavas6);
         oitavas6.setLayout(oitavas6Layout);
@@ -1449,28 +1083,18 @@ public class Simulacao extends javax.swing.JFrame {
             .addGroup(oitavas6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(oitavas6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(oitavas6Layout.createSequentialGroup()
-                        .addComponent(oitavasGrupoF1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(oitavas6Layout.createSequentialGroup()
-                        .addComponent(oitavasGrupoF2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(oitavasGrupoF1)
+                    .addComponent(oitavasGrupoF2))
+                .addContainerGap(175, Short.MAX_VALUE))
         );
         oitavas6Layout.setVerticalGroup(
             oitavas6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, oitavas6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(oitavas6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(oitavasGrupoF1)
-                    .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(oitavasGrupoF1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(oitavas6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(oitavasGrupoF2)
-                    .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addComponent(oitavasGrupoF2)
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         oitavas2.setBackground(new java.awt.Color(51, 51, 51));
@@ -1479,17 +1103,9 @@ public class Simulacao extends javax.swing.JFrame {
 
         oitavasGrupoB1.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
         oitavasGrupoB1.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoB1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/qatar_icon_127877.png"))); // NOI18N
-        oitavasGrupoB1.setText("Time 2");
 
         oitavasGrupoB2.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
         oitavasGrupoB2.setForeground(new java.awt.Color(255, 255, 255));
-        oitavasGrupoB2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/ecuador_icon_127819.png"))); // NOI18N
-        oitavasGrupoB2.setText("Time 1");
-
-        jTextField3.setText("0");
-
-        jTextField4.setText("0");
 
         javax.swing.GroupLayout oitavas2Layout = new javax.swing.GroupLayout(oitavas2);
         oitavas2.setLayout(oitavas2Layout);
@@ -1498,28 +1114,43 @@ public class Simulacao extends javax.swing.JFrame {
             .addGroup(oitavas2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(oitavas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(oitavas2Layout.createSequentialGroup()
-                        .addComponent(oitavasGrupoB1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(oitavas2Layout.createSequentialGroup()
-                        .addComponent(oitavasGrupoB2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(oitavasGrupoB1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(oitavasGrupoB2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         oitavas2Layout.setVerticalGroup(
             oitavas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, oitavas2Layout.createSequentialGroup()
+                .addContainerGap(14, Short.MAX_VALUE)
+                .addComponent(oitavasGrupoB1, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(oitavasGrupoB2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        campeao.setBackground(new java.awt.Color(51, 51, 51));
+        campeao.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        campeao.setPreferredSize(new java.awt.Dimension(170, 216));
+
+        timeCampeao.setFont(new java.awt.Font("Ubuntu Mono", 1, 14)); // NOI18N
+        timeCampeao.setForeground(new java.awt.Color(255, 255, 255));
+        timeCampeao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/world-cup.png"))); // NOI18N
+
+        javax.swing.GroupLayout campeaoLayout = new javax.swing.GroupLayout(campeao);
+        campeao.setLayout(campeaoLayout);
+        campeaoLayout.setHorizontalGroup(
+            campeaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(campeaoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(oitavas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(oitavasGrupoB1)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(oitavas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(oitavasGrupoB2)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addComponent(timeCampeao, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(17, Short.MAX_VALUE))
+        );
+        campeaoLayout.setVerticalGroup(
+            campeaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(campeaoLayout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(timeCampeao, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1527,32 +1158,29 @@ public class Simulacao extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jLabel117)
-                                .addGap(526, 526, 526)
-                                .addComponent(sair, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(grupoA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(grupoB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(grupoC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(grupoD, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(grupoA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(grupoB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(grupoC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(grupoD, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(48, 48, 48)
-                                        .addComponent(jLabel25))
-                                    .addComponent(oitavas1, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
-                                    .addComponent(oitavas2, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
-                                    .addComponent(oitavas4, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
-                                    .addComponent(oitavas3, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(oitavas1, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
+                                            .addComponent(oitavas2, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
+                                            .addComponent(oitavas4, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
+                                            .addComponent(oitavas3, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(73, 73, 73)
+                                        .addComponent(jLabel25)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
@@ -1604,73 +1232,93 @@ public class Simulacao extends javax.swing.JFrame {
                                     .addComponent(grupoH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(grupoE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(grupoF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(grupoG, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(9, 9, 9))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(final1, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(572, 572, 572))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(610, 610, 610)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                                    .addComponent(grupoG, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(397, 397, 397)
+                                .addComponent(simular, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel117)
+                                .addGap(175, 175, 175))
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(final1, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(106, 106, 106)))
+                        .addComponent(campeao, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(166, 166, 166)
+                        .addComponent(sair, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(9, 9, 9))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(9, 9, 9)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(sair, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel117))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(final1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel25)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(oitavas1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(grupoA, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(sair, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel117))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(final1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(campeao, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(21, 21, 21)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(grupoB, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(30, 30, 30)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(oitavas6, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(oitavas2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addComponent(jLabel25)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(oitavas1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(grupoA, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(grupoB, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(30, 30, 30)
+                                        .addComponent(oitavas6, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(oitavas2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(27, 27, 27)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(grupoC, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(oitavas3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(43, 43, 43)))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(grupoD, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(oitavas4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(grupoC, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addComponent(oitavas3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(43, 43, 43)))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(grupoD, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(24, 24, 24)
+                                                .addComponent(oitavas4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(29, 29, 29)
+                                        .addComponent(oitavas7, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(47, 47, 47)
+                                        .addComponent(oitavas8, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(29, 29, 29)
-                                .addComponent(oitavas7, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(47, 47, 47)
-                                .addComponent(oitavas8, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel83)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel83)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(oitavas5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(grupoE, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(oitavas5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(grupoE, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(grupoF, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(grupoG, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(grupoH, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(grupoF, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(grupoG, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(grupoH, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(58, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(74, 74, 74)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1693,98 +1341,126 @@ public class Simulacao extends javax.swing.JFrame {
                                 .addComponent(quartas2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(119, 119, 119)
-                                .addComponent(quartas4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29))
+                                .addComponent(quartas4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(simular, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField15ActionPerformed
-
-    private void jTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField16ActionPerformed
-
-    private void jTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField19ActionPerformed
-
-    private void jTextField20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField20ActionPerformed
-
-    private void jTextField25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField25ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField25ActionPerformed
-
-    private void jTextField26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField26ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField26ActionPerformed
-
-    private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField17ActionPerformed
-
-    private void jTextField18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField18ActionPerformed
-
-    private void jTextField27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField27ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField27ActionPerformed
-
-    private void jTextField28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField28ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField28ActionPerformed
-
     private void sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sairActionPerformed
         this.dispose();
     }//GEN-LAST:event_sairActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void simularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simularActionPerformed
+        SimulacaoCode simularFase = new SimulacaoCode();
+        
+        ArrayList<String> grupoA = simularFase.faseDeGrupos(simularFase.grupoA);
+        ArrayList<String> grupoB = simularFase.faseDeGrupos(simularFase.grupoB);
+        ArrayList<String> grupoC = simularFase.faseDeGrupos(simularFase.grupoC);
+        ArrayList<String> grupoD = simularFase.faseDeGrupos(simularFase.grupoD);
+        ArrayList<String> grupoE = simularFase.faseDeGrupos(simularFase.grupoE);
+        ArrayList<String> grupoF = simularFase.faseDeGrupos(simularFase.grupoF);
+        ArrayList<String> grupoG = simularFase.faseDeGrupos(simularFase.grupoG);
+        ArrayList<String> grupoH = simularFase.faseDeGrupos(simularFase.grupoH);
+        
+        ArrayList<String> oitavasPartidaUm = simularFase.partidas(grupoA.get(0), grupoB.get(1));
+        ArrayList<String> oitavasPartidaDois = simularFase.partidas(grupoC.get(0), grupoD.get(1));
+        ArrayList<String> oitavasPartidaTres = simularFase.partidas(grupoE.get(0), grupoF.get(1));
+        ArrayList<String> oitavasPartidaQuatro = simularFase.partidas(grupoG.get(0), grupoH.get(1));
+        ArrayList<String> oitavasPartidaCinco = simularFase.partidas(grupoB.get(0), grupoA.get(1));
+        ArrayList<String> oitavasPartidaSeis = simularFase.partidas(grupoD.get(0), grupoC.get(1));
+        ArrayList<String> oitavasPartidaSete = simularFase.partidas(grupoF.get(0), grupoE.get(1));
+        ArrayList<String> oitavasPartidaOito = simularFase.partidas(grupoH.get(0), grupoG.get(1));
+        
+        
+        ArrayList<String> quartasPartidaUm = simularFase.partidas(oitavasPartidaUm.get(0), oitavasPartidaDois.get(0));
+        ArrayList<String> quartasPartidaDois = simularFase.partidas(oitavasPartidaTres.get(0), oitavasPartidaQuatro.get(0));
+        ArrayList<String> quartasPartidaTres = simularFase.partidas(oitavasPartidaCinco.get(0), oitavasPartidaSeis.get(0));
+        ArrayList<String> quartasPartidaQuatro = simularFase.partidas(oitavasPartidaSete.get(0), oitavasPartidaOito.get(0));
+        
+        
+        ArrayList<String> semifinalUm = simularFase.partidas(quartasPartidaUm.get(0), quartasPartidaDois.get(0));
+        ArrayList<String> semifinalDois = simularFase.partidas(quartasPartidaTres.get(0), quartasPartidaQuatro.get(0));
+        
+        ArrayList<String> finals = simularFase.partidas(semifinalUm.get(0), semifinalDois.get(0));
+        
+   
+        
+        
+        oitavasGrupoA1.setText(grupoA.get(0) + "  " + oitavasPartidaUm.get(1));
+        oitavasGrupoA2.setText(grupoB.get(1) + "  " + oitavasPartidaUm.get(2));
+       
+        oitavasGrupoB1.setText(grupoC.get(0) + "  " + oitavasPartidaDois.get(1));
+        oitavasGrupoB2.setText(grupoD.get(1) + "  " + oitavasPartidaDois.get(2));
+        
+        
+        oitavasGrupoC1.setText(grupoE.get(0) + "  " + oitavasPartidaTres.get(1));
+        oitavasGrupoC2.setText(grupoF.get(1) + "  " + oitavasPartidaTres.get(2));
+        
+        
+        oitavasGrupoD1.setText(grupoG.get(0) + "  " + oitavasPartidaQuatro.get(1));
+        oitavasGrupoD2.setText(grupoH.get(1) + "  " + oitavasPartidaQuatro.get(2));
+        
+        
+        oitavasGrupoE1.setText(grupoB.get(0) + "  " + oitavasPartidaCinco.get(1));
+        oitavasGrupoE2.setText(grupoA.get(1) + "  " + oitavasPartidaCinco.get(2));
+        
+        
+        oitavasGrupoF1.setText(grupoD.get(0) + "  " + oitavasPartidaSeis.get(1));
+        oitavasGrupoF2.setText(grupoC.get(1) + "  " + oitavasPartidaSeis.get(2));
+        
+        
+        oitavasGrupoG1.setText(grupoF.get(0) + "  " + oitavasPartidaSete.get(1));
+        oitavasGrupoG2.setText(grupoE.get(1) + "  " + oitavasPartidaSete.get(2));
+        
+        
+        oitavasGrupoH1.setText(grupoH.get(0) + "  " + oitavasPartidaOito.get(1));
+        oitavasGrupoH2.setText(grupoG.get(1) + "  " + oitavasPartidaOito.get(2));
+        
+        
+        
+        
+        
+        quartasAUm.setText(oitavasPartidaUm.get(0) + "  " + quartasPartidaUm.get(1));
+        quartasADois.setText(oitavasPartidaDois.get(0) + "  " + quartasPartidaUm.get(2));
+        
+        quartasBUm.setText(oitavasPartidaTres.get(0) + "  " + quartasPartidaDois.get(1));
+        quartasBDois.setText(oitavasPartidaQuatro.get(0) + "  " + quartasPartidaDois.get(2));     
+        
+        quartasCUm.setText(oitavasPartidaCinco.get(0) + "  " + quartasPartidaTres.get(1));
+        quartasCDois.setText(oitavasPartidaSeis.get(0) + "  " + quartasPartidaTres.get(2));
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+        quartasDUm.setText(oitavasPartidaSete.get(0) + "  " + quartasPartidaQuatro.get(1));
+        quartasDDois.setText(oitavasPartidaOito.get(0) + "  " + quartasPartidaQuatro.get(2));      
+        
+        
+        
+        
+        
+        semifinalAUm.setText(quartasPartidaUm.get(0) + "  " + semifinalUm.get(1));
+        semifinalADois.setText(quartasPartidaDois.get(0) + "  " + semifinalUm.get(2));
+        
+        
+        semifinalBUm.setText(quartasPartidaTres.get(0) + "  " + semifinalDois.get(1));
+        semifinalBDois.setText(quartasPartidaQuatro.get(0) + "  " + semifinalDois.get(2));
 
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField10ActionPerformed
-
-    private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField11ActionPerformed
-
-    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField12ActionPerformed
-
-    private void jTextField21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField21ActionPerformed
-
-    private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField22ActionPerformed
-
-    private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField13ActionPerformed
-
-    private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField14ActionPerformed
-
-    private void jTextField23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField23ActionPerformed
-
-    private void jTextField24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField24ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField24ActionPerformed
+      
+        
+        finalTimeUm.setText(semifinalUm.get(0) + "  " + finals.get(1));
+        finalTimeDois.setText(semifinalDois.get(0) + "  " + finals.get(2));        
+                
+        
+        timeCampeao.setText(finals.get(0));
+        
+        
+        
+     
+       
+        
+    }//GEN-LAST:event_simularActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1837,6 +1513,7 @@ public class Simulacao extends javax.swing.JFrame {
     private javax.swing.JLabel belgica;
     private javax.swing.JLabel brasil;
     private javax.swing.JLabel camaroes;
+    private javax.swing.JPanel campeao;
     private javax.swing.JLabel canada;
     private javax.swing.JLabel coreiaDoSul;
     private javax.swing.JLabel costaRica;
@@ -1845,6 +1522,8 @@ public class Simulacao extends javax.swing.JFrame {
     private javax.swing.JLabel equador;
     private javax.swing.JLabel espanha;
     private javax.swing.JPanel final1;
+    private javax.swing.JLabel finalTimeDois;
+    private javax.swing.JLabel finalTimeUm;
     private javax.swing.JLabel franca;
     private javax.swing.JLabel gales;
     private javax.swing.JLabel gana;
@@ -1859,56 +1538,13 @@ public class Simulacao extends javax.swing.JFrame {
     private javax.swing.JLabel holanda;
     private javax.swing.JLabel inglaterra;
     private javax.swing.JLabel ira;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel100;
-    private javax.swing.JLabel jLabel101;
-    private javax.swing.JLabel jLabel102;
-    private javax.swing.JLabel jLabel103;
     private javax.swing.JLabel jLabel104;
     private javax.swing.JLabel jLabel105;
-    private javax.swing.JLabel jLabel106;
-    private javax.swing.JLabel jLabel107;
-    private javax.swing.JLabel jLabel108;
-    private javax.swing.JLabel jLabel109;
-    private javax.swing.JLabel jLabel110;
-    private javax.swing.JLabel jLabel111;
-    private javax.swing.JLabel jLabel112;
-    private javax.swing.JLabel jLabel113;
-    private javax.swing.JLabel jLabel114;
-    private javax.swing.JLabel jLabel115;
     private javax.swing.JLabel jLabel116;
     private javax.swing.JLabel jLabel117;
     private javax.swing.JLabel jLabel118;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel83;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField jTextField27;
-    private javax.swing.JTextField jTextField28;
-    private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     private javax.swing.JLabel japao;
     private javax.swing.JLabel marracos;
     private javax.swing.JLabel mexico;
@@ -1921,9 +1557,7 @@ public class Simulacao extends javax.swing.JFrame {
     private javax.swing.JPanel oitavas7;
     private javax.swing.JPanel oitavas8;
     private javax.swing.JLabel oitavasGrupoA1;
-    private javax.swing.JLabel oitavasGrupoA1R;
     private javax.swing.JLabel oitavasGrupoA2;
-    private javax.swing.JLabel oitavasGrupoA2R;
     private javax.swing.JLabel oitavasGrupoB1;
     private javax.swing.JLabel oitavasGrupoB2;
     private javax.swing.JLabel oitavasGrupoC1;
@@ -1945,59 +1579,130 @@ public class Simulacao extends javax.swing.JFrame {
     private javax.swing.JPanel quartas2;
     private javax.swing.JPanel quartas3;
     private javax.swing.JPanel quartas4;
+    private javax.swing.JLabel quartasADois;
+    private javax.swing.JLabel quartasAUm;
+    private javax.swing.JLabel quartasBDois;
+    private javax.swing.JLabel quartasBUm;
+    private javax.swing.JLabel quartasCDois;
+    private javax.swing.JLabel quartasCUm;
+    private javax.swing.JLabel quartasDDois;
+    private javax.swing.JLabel quartasDUm;
     private code.Botao sair;
     private javax.swing.JPanel semifinal1;
     private javax.swing.JPanel semifinal2;
+    private javax.swing.JLabel semifinalADois;
+    private javax.swing.JLabel semifinalAUm;
+    private javax.swing.JLabel semifinalBDois;
+    private javax.swing.JLabel semifinalBUm;
     private javax.swing.JLabel senegal;
     private javax.swing.JLabel servia;
+    private javax.swing.JButton simular;
     private javax.swing.JLabel suica;
+    private javax.swing.JLabel timeCampeao;
     private javax.swing.JLabel tunisia;
     private javax.swing.JLabel uruguai;
     private javax.swing.JLabel usa;
     // End of variables declaration//GEN-END:variables
 
-
     public void GrupoOficial() {
-        code.SimulacaoOficial simulacao = new code.SimulacaoOficial();
+        code.GruposOficiais simulacao = new code.GruposOficiais();
         qatar.setText(simulacao.grupoA[0]);
         equador.setText(simulacao.grupoA[1]);
         senegal.setText(simulacao.grupoA[2]);
         holanda.setText(simulacao.grupoA[3]);
-        
+
         inglaterra.setText(simulacao.grupoB[0]);
         ira.setText(simulacao.grupoB[1]);
         usa.setText(simulacao.grupoB[2]);
         gales.setText(simulacao.grupoB[3]);
-        
+
         argentina.setText(simulacao.grupoC[0]);
         arabiaSaudita.setText(simulacao.grupoC[1]);
         mexico.setText(simulacao.grupoC[2]);
         polonia.setText(simulacao.grupoC[3]);
-        
+
         franca.setText(simulacao.grupoD[0]);
         australia.setText(simulacao.grupoD[1]);
         dinamarca.setText(simulacao.grupoD[2]);
         tunisia.setText(simulacao.grupoD[3]);
-        
+
         espanha.setText(simulacao.grupoE[0]);
         costaRica.setText(simulacao.grupoE[1]);
         alemanha.setText(simulacao.grupoE[2]);
         japao.setText(simulacao.grupoE[3]);
-        
+
         belgica.setText(simulacao.grupoF[0]);
         canada.setText(simulacao.grupoF[1]);
         marracos.setText(simulacao.grupoF[2]);
         croacia.setText(simulacao.grupoF[3]);
-        
+
         brasil.setText(simulacao.grupoG[0]);
         servia.setText(simulacao.grupoG[1]);
         suica.setText(simulacao.grupoG[2]);
         camaroes.setText(simulacao.grupoG[3]);
-        
+
         portugual.setText(simulacao.grupoH[0]);
         gana.setText(simulacao.grupoH[1]);
         uruguai.setText(simulacao.grupoH[2]);
         coreiaDoSul.setText(simulacao.grupoH[3]);
     }
+    
+    SelecoesDAO selecao = new SelecoesDAO();
+    ArrayList<SelecoesDTO> lista = selecao.selecoesLista();
+    
+    public String grupoA2[] = {
+        lista.get(8).toString(), //Catar
+        lista.get(13).toString(), //Equador 
+        lista.get(27).toString(), //Senegal
+        lista.get(18).toString()}; //Holanda
 
+    public String grupoB2[] = {
+        lista.get(19).toString(), //Inglaterra
+        lista.get(20).toString(), //Irã
+        lista.get(15).toString(), //Estados Unidos
+        lista.get(24).toString()}; //Pais de Gales
+
+    public String grupoC2[] = {
+        lista.get(2).toString(), //Argentina
+        lista.get(1).toString(), //Arabia Saudita
+        lista.get(23).toString(), //Mexico
+        lista.get(25).toString()}; //Polonia
+
+    public String grupoD2[] = {
+        lista.get(16).toString(), //Franca
+        lista.get(3).toString(), //Australia
+        lista.get(12).toString(), //Dinamarca
+        lista.get(30).toString()}; //Tunisia
+
+    public String grupoE2[] = {
+        lista.get(14).toString(), //Espanha
+        lista.get(10).toString(), //Costa Rica
+        lista.get(0).toString(), //Alemanha
+        lista.get(21).toString()}; //Japao
+
+    public String grupoF2[] = {
+        lista.get(4).toString(), //Belgica
+        lista.get(7).toString(), //Canada
+        lista.get(22).toString(), //Marrocos
+        lista.get(11).toString()}; //Croacia
+
+    public String grupoG2[] = {
+        lista.get(5).toString(), //Brasil
+        lista.get(28).toString(), //Servia
+        lista.get(29).toString(), //Suica
+        lista.get(6).toString()}; //Camaroes
+
+    public String grupoH2[] = {
+        lista.get(26).toString(), //Portugal
+        lista.get(17).toString(), //Gana
+        lista.get(31).toString(), //Uruguai
+        lista.get(9).toString()}; //Coreia do Sul
+
+
+    
+    
+    
+    
+    
+ 
 }

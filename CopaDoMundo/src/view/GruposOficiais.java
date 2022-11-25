@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
  */
 package view;
-import code.SimulacaoOficial;
 /**
  *
  * @author Gustavo
@@ -675,7 +674,7 @@ public class GruposOficiais extends javax.swing.JInternalFrame {
     // End of variables declaration//GEN-END:variables
     
     public void GrupoOficial() {
-        SimulacaoOficial simulacao = new SimulacaoOficial();
+        code.GruposOficiais simulacao = new code.GruposOficiais();
         
         qatar.setText(simulacao.grupoA[0]);
         equador.setText(simulacao.grupoA[1]);

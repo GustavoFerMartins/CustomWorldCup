@@ -29,6 +29,9 @@ public class SelecoesDAO {
         }
     }
     
+    
+    
+    
     public ArrayList<SelecoesDTO> selecoesLista() {
         conexao = new ConexaoDAO().getConnection();
         String sql = "SELECT * FROM selecoes";

@@ -149,13 +149,13 @@ public class SimulacaoNaoOficial extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void simularPartidasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simularPartidasActionPerformed
-        SimularPartidasNaoOficial simulacao = new SimularPartidasNaoOficial();
+        SimulacaoNaoOficialTela simulacao = new SimulacaoNaoOficialTela();
         simulacao.setVisible(true);
     }//GEN-LAST:event_simularPartidasActionPerformed
 
     private void criarGruposManualmenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_criarGruposManualmenteActionPerformed
-        SimulacaoNaoOficialTela simulacao = new SimulacaoNaoOficialTela();
-        simulacao.setVisible(true);
+        CriarGruposManual grupos = new CriarGruposManual();
+        grupos.setVisible(true);
     }//GEN-LAST:event_criarGruposManualmenteActionPerformed
 
     private void sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sairActionPerformed

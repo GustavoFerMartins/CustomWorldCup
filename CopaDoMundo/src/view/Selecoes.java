@@ -402,7 +402,7 @@ public class Selecoes extends javax.swing.JInternalFrame {
     private javax.swing.JLabel usa;
     // End of variables declaration//GEN-END:variables
     public void timesOficiais() {
-        code.SimulacaoOficial simulacao = new code.SimulacaoOficial();
+        code.GruposOficiais simulacao = new code.GruposOficiais();
 
         qatar.setText(simulacao.grupoA[0]);
         equador.setText(simulacao.grupoA[1]);

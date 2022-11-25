@@ -706,7 +706,7 @@ public class GruposOficiaisCopa extends javax.swing.JFrame {
     private javax.swing.JLabel usa;
     // End of variables declaration//GEN-END:variables
     public void GrupoOficial() {
-        code.SimulacaoOficial simulacao = new code.SimulacaoOficial();
+        code.GruposOficiais simulacao = new code.GruposOficiais();
 
         qatar.setText(simulacao.grupoA[0]);
         equador.setText(simulacao.grupoA[1]);
