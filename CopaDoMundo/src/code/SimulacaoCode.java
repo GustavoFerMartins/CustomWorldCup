@@ -4,6 +4,7 @@
  */
 package code;
 
+
 import java.util.ArrayList;
 import modelo.dao.SelecoesDAO;
 import modelo.dto.SelecoesDTO;
@@ -17,17 +18,21 @@ public class SimulacaoCode {
 
     SelecoesDAO selecao = new SelecoesDAO();
     ArrayList<SelecoesDTO> lista = selecao.selecoesLista();
+
     
     
- 
     
     
+    
+
     public String grupoA[] = {
+    
         lista.get(8).toString(), //Catar
         lista.get(13).toString(), //Equador 
         lista.get(27).toString(), //Senegal
         lista.get(18).toString()}; //Holanda
-
+        
+    
     public String grupoB[] = {
         lista.get(19).toString(), //Inglaterra
         lista.get(20).toString(), //Irã
@@ -82,7 +87,7 @@ public class SimulacaoCode {
         int saldos[] = new int[4];
 
         ArrayList<String> faseDeGruposJogosUm = this.partidas(timeUm, timeDois);
-        
+
         if (faseDeGruposJogosUm.get(0).equals(timeUm)) {
             saldos[0] += 3;
         } else if (faseDeGruposJogosUm.get(0).equals(timeDois)) {
@@ -146,23 +151,13 @@ public class SimulacaoCode {
         return vencedores;
 
     }
-    
-    
-   
-    
-    
-    
-    
-    
-    
-    
 
     public ArrayList<String> partidas(String timeUm, String timeDois) {
         Random gerador = new Random();
 
         int qntGolsTimeUm;
         int qntGolsTimeDois;
-        
+
         ArrayList<String> resultado = new ArrayList<>();
 
         do {
@@ -175,7 +170,7 @@ public class SimulacaoCode {
             resultado.add(0, timeUm);
             resultado.add(1, String.valueOf(qntGolsTimeUm));
             resultado.add(2, String.valueOf(qntGolsTimeDois));
-            
+
         } else if (qntGolsTimeDois > qntGolsTimeUm) {
             resultado.add(0, timeDois);
             resultado.add(1, String.valueOf(qntGolsTimeUm));
@@ -185,10 +180,5 @@ public class SimulacaoCode {
         return resultado;
 
     }
- 
-    
-    
-    
-    
 
 }
