@@ -27,7 +27,6 @@ public class SimulacaoOficial extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         sair = new code.Botao();
-        botao1 = new code.Botao();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         simularPartidas = new code.Botao();
@@ -44,16 +43,6 @@ public class SimulacaoOficial extends javax.swing.JInternalFrame {
         sair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sairActionPerformed(evt);
-            }
-        });
-
-        botao1.setBackground(new java.awt.Color(51, 51, 51));
-        botao1.setForeground(new java.awt.Color(255, 0, 0));
-        botao1.setText("MANUAL PARA JOGAR");
-        botao1.setFont(new java.awt.Font("Ubuntu Mono", 1, 18)); // NOI18N
-        botao1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botao1ActionPerformed(evt);
             }
         });
 
@@ -85,10 +74,7 @@ public class SimulacaoOficial extends javax.swing.JInternalFrame {
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(sair, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(sair, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(simularPartidas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(30, 30, 30))
@@ -103,9 +89,7 @@ public class SimulacaoOficial extends javax.swing.JInternalFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(simularPartidas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(80, 80, 80)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(sair, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(sair, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(24, Short.MAX_VALUE))
         );
@@ -117,10 +101,6 @@ public class SimulacaoOficial extends javax.swing.JInternalFrame {
         this.dispose();
     }//GEN-LAST:event_sairActionPerformed
 
-    private void botao1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botao1ActionPerformed
-
     private void simularPartidasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simularPartidasActionPerformed
         Simulacao simulacaoTela = new Simulacao();
         simulacaoTela.setVisible(true);
@@ -128,7 +108,6 @@ public class SimulacaoOficial extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private code.Botao botao1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private code.Botao sair;

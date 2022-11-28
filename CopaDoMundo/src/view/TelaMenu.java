@@ -3,7 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package view;
+
+
 import code.Icone;
+
 import view.TelaLogin;
 
 /**
@@ -16,10 +19,11 @@ public class TelaMenu extends javax.swing.JFrame {
      * Creates new form TelaMenu
      */
     public TelaMenu() {
-        initComponents(); 
+        initComponents();
         this.setLocationRelativeTo(null);
         Icone icon = new Icone();
         icon.InserirIcone(this);
+        user();
         
     }
 
@@ -390,8 +394,12 @@ public class TelaMenu extends javax.swing.JFrame {
     private javax.swing.JMenu times;
     // End of variables declaration//GEN-END:variables
 
-  
+   public void user(){
+       TelaLogin usuario = new TelaLogin();
+       String nome = usuario.pegaNome();
+       System.out.println(nome + "menu");
+       
+       
+   }
 
-   
-    
 }

@@ -12,7 +12,6 @@ import java.sql.SQLException;
 import modelo.dao.AutenticaDAO;
 import java.sql.ResultSet;
 
-
 public class TelaLogin extends javax.swing.JFrame {
 
     /**
@@ -23,6 +22,7 @@ public class TelaLogin extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         Icone icon = new Icone();
         icon.InserirIcone(this);
+        
 
     }
 
@@ -219,7 +219,8 @@ public class TelaLogin extends javax.swing.JFrame {
 
     private void entrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entrarActionPerformed
         Autenticar();
-
+        pegaNome();
+        
     }//GEN-LAST:event_entrarActionPerformed
 
     private void registrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarActionPerformed
@@ -290,8 +291,10 @@ public class TelaLogin extends javax.swing.JFrame {
             nomeUsuario = usuario.getText();
             senhaUsuario = senha.getText();
             LoginDTO usuarios = new LoginDTO();
+
             usuarios.setNome(nomeUsuario);
             usuarios.setSenha(senhaUsuario);
+
             UsuarioDAO usuarioDao = new UsuarioDAO();
             UsuarioDTO rsusuariodao = usuarioDao.autenticacaoUsuario(usuarios);
 
@@ -347,5 +350,10 @@ public class TelaLogin extends javax.swing.JFrame {
 
     }
 
+    public String pegaNome() {
+        String nome = usuario.getText();
+        System.out.println(nome);
+        return nome;
+    }
 
 }

@@ -5,8 +5,6 @@
 package view;
 
 import java.util.ArrayList;
-import modelo.dao.SelecoesDAO;
-import modelo.dto.SelecoesDTO;
 import code.SimulacaoCode;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -1758,41 +1756,7 @@ public class Simulacao extends javax.swing.JFrame {
         
         timeCampeao.setText(finals.get(0));
 
-        iconeOitavasTimeUm();
-        iconeOitavasTimeDois();
-        iconeOitavasTimeTres();
-        iconeOitavasTimeQuatro();
-        iconeOitavasTimeCinco();
-        iconeOitavasTimeSeis();
-        iconeOitavasTimeSete();
-        iconeOitavasTimeOito();
-        iconeOitavasTimeNove();
-        iconeOitavasTimeDez();
-        iconeOitavasTimeOnze();
-        iconeOitavasTimeDoze();
-        iconeOitavasTimeTreze();
-        iconeOitavasTimeQuatorze();
-        iconeOitavasTimeQuinze();
-        iconeOitavasTimeDezesseis();
-        
-        iconeQuartasTimeUm();
-        iconeQuartasTimeDois();
-        iconeQuartasTimeTres();
-        iconeQuartasTimeQuatro();
-        iconeQuartasTimeCinco();
-        iconeQuartasTimeSeis();
-        iconeQuartasTimeSete();
-        iconeQuartasTimeOito();
-        
-        iconeSemifinalTimeUm();
-        iconeSemifinalTimeDois();
-        iconeSemifinalTimeTres();
-        iconeSemifinalTimeQuatro();
-
-        iconeFinalTimeUm();
-        iconeFinalTimeDois();
-        
-        iconeVencedor();
+        icones();
     }//GEN-LAST:event_simularActionPerformed
 
     /**
@@ -2014,23 +1978,64 @@ public class Simulacao extends javax.swing.JFrame {
         coreiaDoSul.setText(simulacao.grupoH[3]);
     }
 
-    public void iconeOitavasTimeUm() {
+    
+    
+    public void icones(){
+        iconeOitavasTimeUm();
+        iconeOitavasTimeDois();
+        iconeOitavasTimeTres();
+        iconeOitavasTimeQuatro();
+        iconeOitavasTimeCinco();
+        iconeOitavasTimeSeis();
+        iconeOitavasTimeSete();
+        iconeOitavasTimeOito();
+        iconeOitavasTimeNove();
+        iconeOitavasTimeDez();
+        iconeOitavasTimeOnze();
+        iconeOitavasTimeDoze();
+        iconeOitavasTimeTreze();
+        iconeOitavasTimeQuatorze();
+        iconeOitavasTimeQuinze();
+        iconeOitavasTimeDezesseis();
+        
+        iconeQuartasTimeUm();
+        iconeQuartasTimeDois();
+        iconeQuartasTimeTres();
+        iconeQuartasTimeQuatro();
+        iconeQuartasTimeCinco();
+        iconeQuartasTimeSeis();
+        iconeQuartasTimeSete();
+        iconeQuartasTimeOito();
+        
+        iconeSemifinalTimeUm();
+        iconeSemifinalTimeDois();
+        iconeSemifinalTimeTres();
+        iconeSemifinalTimeQuatro();
+
+        iconeFinalTimeUm();
+        iconeFinalTimeDois();
+        
+        iconeVencedor();
+    }
+    
+    
+    private void iconeOitavasTimeUm() {
 
         String oitavas;
         oitavas = oitavasGrupoA1.getText();
 
         if (oitavas.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qata_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             oitavasGrupoA1.setIcon(produto_imagem);
 
         } else if (oitavas.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             oitavasGrupoA1.setIcon(produto_imagem);
         } else if (oitavas.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             oitavasGrupoA1.setIcon(produto_imagem);
         } else if (oitavas.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             oitavasGrupoA1.setIcon(produto_imagem);
         }
 
@@ -2041,16 +2046,16 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas = oitavasGrupoA2.getText();
 
         if (oitavas.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             oitavasGrupoA2.setIcon(iconeTime);
         } else if (oitavas.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             oitavasGrupoA2.setIcon(iconeTime);
         } else if (oitavas.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             oitavasGrupoA2.setIcon(iconeTime);
         } else if (oitavas.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             oitavasGrupoA2.setIcon(iconeTime);
         }
     }
@@ -2060,16 +2065,16 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas = oitavasGrupoB1.getText();
 
         if (oitavas.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             oitavasGrupoB1.setIcon(iconeTime);
         } else if (oitavas.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             oitavasGrupoB1.setIcon(iconeTime);
         } else if (oitavas.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             oitavasGrupoB1.setIcon(iconeTime);
         } else if (oitavas.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             oitavasGrupoB1.setIcon(iconeTime);
         }
     }
@@ -2079,16 +2084,16 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas = oitavasGrupoB2.getText();
 
         if (oitavas.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             oitavasGrupoB2.setIcon(iconeTime);
         } else if (oitavas.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             oitavasGrupoB2.setIcon(iconeTime);
         } else if (oitavas.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             oitavasGrupoB2.setIcon(iconeTime);
         } else if (oitavas.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             oitavasGrupoB2.setIcon(iconeTime);
         }
     }
@@ -2099,16 +2104,16 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas = oitavasGrupoC1.getText();
 
         if (oitavas.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             oitavasGrupoC1.setIcon(iconeTime);
         } else if (oitavas.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             oitavasGrupoC1.setIcon(iconeTime);
         } else if (oitavas.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             oitavasGrupoC1.setIcon(iconeTime);
         } else if (oitavas.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             oitavasGrupoC1.setIcon(iconeTime);
         }
     }
@@ -2118,16 +2123,16 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas = oitavasGrupoC2.getText();
 
         if (oitavas.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             oitavasGrupoC2.setIcon(iconeTime);
         } else if (oitavas.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             oitavasGrupoC2.setIcon(iconeTime);
         } else if (oitavas.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             oitavasGrupoC2.setIcon(iconeTime);
         } else if (oitavas.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             oitavasGrupoC2.setIcon(iconeTime);
         }
     }
@@ -2137,16 +2142,16 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas = oitavasGrupoD1.getText();
 
         if (oitavas.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             oitavasGrupoD1.setIcon(iconeTime);
         } else if (oitavas.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             oitavasGrupoD1.setIcon(iconeTime);
         } else if (oitavas.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             oitavasGrupoD1.setIcon(iconeTime);
         } else if (oitavas.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             oitavasGrupoD1.setIcon(iconeTime);
         }
     }
@@ -2156,16 +2161,16 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas = oitavasGrupoD2.getText();
 
         if (oitavas.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             oitavasGrupoD2.setIcon(iconeTime);
         } else if (oitavas.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             oitavasGrupoD2.setIcon(iconeTime);
         } else if (oitavas.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             oitavasGrupoD2.setIcon(iconeTime);
         } else if (oitavas.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             oitavasGrupoD2.setIcon(iconeTime);
         }
     }
@@ -2175,16 +2180,16 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas = oitavasGrupoE1.getText();
 
         if (oitavas.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             oitavasGrupoE1.setIcon(iconeTime);
         } else if (oitavas.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             oitavasGrupoE1.setIcon(iconeTime);
         } else if (oitavas.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             oitavasGrupoE1.setIcon(iconeTime);
         } else if (oitavas.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             oitavasGrupoE1.setIcon(iconeTime);
         }
     }
@@ -2194,17 +2199,17 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas = oitavasGrupoE2.getText();
 
        if (oitavas.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qatar_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             oitavasGrupoE2.setIcon(produto_imagem);
 
         } else if (oitavas.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             oitavasGrupoE2.setIcon(produto_imagem);
         } else if (oitavas.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             oitavasGrupoE2.setIcon(produto_imagem);
         } else if (oitavas.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             oitavasGrupoE2.setIcon(produto_imagem);
         }
     }
@@ -2215,16 +2220,16 @@ public class Simulacao extends javax.swing.JFrame {
 
 
         if (oitavas.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             oitavasGrupoF1.setIcon(iconeTime);
         } else if (oitavas.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             oitavasGrupoF1.setIcon(iconeTime);
         } else if (oitavas.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             oitavasGrupoF1.setIcon(iconeTime);
         } else if (oitavas.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             oitavasGrupoF1.setIcon(iconeTime);
         }
     }
@@ -2234,16 +2239,16 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas = oitavasGrupoF2.getText();
 
          if (oitavas.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             oitavasGrupoF2.setIcon(iconeTime);
         } else if (oitavas.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             oitavasGrupoF2.setIcon(iconeTime);
         } else if (oitavas.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             oitavasGrupoF2.setIcon(iconeTime);
         } else if (oitavas.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             oitavasGrupoF2.setIcon(iconeTime);
         }
     }
@@ -2253,16 +2258,16 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas = oitavasGrupoG1.getText();
 
         if (oitavas.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             oitavasGrupoG1.setIcon(iconeTime);
         } else if (oitavas.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             oitavasGrupoG1.setIcon(iconeTime);
         } else if (oitavas.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             oitavasGrupoG1.setIcon(iconeTime);
         } else if (oitavas.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             oitavasGrupoG1.setIcon(iconeTime);
         }
     }
@@ -2272,16 +2277,16 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas = oitavasGrupoG2.getText();
 
         if (oitavas.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             oitavasGrupoG2.setIcon(iconeTime);
         } else if (oitavas.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             oitavasGrupoG2.setIcon(iconeTime);
         } else if (oitavas.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             oitavasGrupoG2.setIcon(iconeTime);
         } else if (oitavas.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             oitavasGrupoG2.setIcon(iconeTime);
         }
     }
@@ -2291,16 +2296,16 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas = oitavasGrupoH1.getText();
 
         if (oitavas.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             oitavasGrupoH1.setIcon(iconeTime);
         } else if (oitavas.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             oitavasGrupoH1.setIcon(iconeTime);
         } else if (oitavas.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             oitavasGrupoH1.setIcon(iconeTime);
         } else if (oitavas.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             oitavasGrupoH1.setIcon(iconeTime);
         }
     }
@@ -2310,16 +2315,16 @@ public class Simulacao extends javax.swing.JFrame {
         oitavas = oitavasGrupoH2.getText();
 
         if (oitavas.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             oitavasGrupoH2.setIcon(iconeTime);
         } else if (oitavas.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             oitavasGrupoH2.setIcon(iconeTime);
         } else if (oitavas.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             oitavasGrupoH2.setIcon(iconeTime);
         } else if (oitavas.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             oitavasGrupoH2.setIcon(iconeTime);
         }
     }
@@ -2330,113 +2335,113 @@ public class Simulacao extends javax.swing.JFrame {
         quartas = quartasAUm.getText();
 
         if (quartas.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qatar_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             quartasAUm.setIcon(produto_imagem);
 
         } else if (quartas.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             quartasAUm.setIcon(produto_imagem);
         } else if (quartas.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             quartasAUm.setIcon(produto_imagem);
         } else if (quartas.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             quartasAUm.setIcon(produto_imagem);}
        
         else if (quartas.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             quartasAUm.setIcon(iconeTime);
         }
        
         else if (quartas.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             quartasAUm.setIcon(iconeTime);
             
         }
        
         else if (quartas.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             quartasAUm.setIcon(iconeTime);
         }
         
         else if (quartas.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             quartasAUm.setIcon(iconeTime);
         }
         else if (quartas.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             quartasAUm.setIcon(iconeTime);
         }
         
         else if (quartas.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             quartasAUm.setIcon(iconeTime);
         }
         else if (quartas.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             quartasAUm.setIcon(iconeTime);
         } else if (quartas.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             quartasAUm.setIcon(iconeTime);
         }
         
@@ -2451,113 +2456,113 @@ public class Simulacao extends javax.swing.JFrame {
         quartas = quartasADois.getText();
 
         if (quartas.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qatar_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             quartasADois.setIcon(produto_imagem);
 
         } else if (quartas.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             quartasADois.setIcon(produto_imagem);
         } else if (quartas.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             quartasADois.setIcon(produto_imagem);
         } else if (quartas.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             quartasADois.setIcon(produto_imagem);}
        
         else if (quartas.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             quartasADois.setIcon(iconeTime);
         }
        
         else if (quartas.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             quartasADois.setIcon(iconeTime);
             
         }
        
         else if (quartas.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             quartasADois.setIcon(iconeTime);
         }
         
         else if (quartas.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             quartasADois.setIcon(iconeTime);
         }
         else if (quartas.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             quartasADois.setIcon(iconeTime);
         }
         
         else if (quartas.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             quartasADois.setIcon(iconeTime);
         }
         else if (quartas.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             quartasADois.setIcon(iconeTime);
         } else if (quartas.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             quartasADois.setIcon(iconeTime);
         }
     }
@@ -2578,113 +2583,113 @@ public class Simulacao extends javax.swing.JFrame {
         quartas = quartasBUm.getText();
 
         if (quartas.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qatar_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             quartasBUm.setIcon(produto_imagem);
 
         } else if (quartas.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             quartasBUm.setIcon(produto_imagem);
         } else if (quartas.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             quartasBUm.setIcon(produto_imagem);
         } else if (quartas.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             quartasBUm.setIcon(produto_imagem);}
        
         else if (quartas.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             quartasBUm.setIcon(iconeTime);
         }
        
         else if (quartas.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             quartasBUm.setIcon(iconeTime);
             
         }
        
         else if (quartas.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             quartasBUm.setIcon(iconeTime);
         }
         
         else if (quartas.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             quartasBUm.setIcon(iconeTime);
         }
         else if (quartas.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             quartasBUm.setIcon(iconeTime);
         }
         
         else if (quartas.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             quartasBUm.setIcon(iconeTime);
         }
         else if (quartas.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             quartasBUm.setIcon(iconeTime);
         } else if (quartas.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             quartasBUm.setIcon(iconeTime);
         }
     }
@@ -2704,113 +2709,113 @@ public class Simulacao extends javax.swing.JFrame {
         quartas = quartasBDois.getText();
 
         if (quartas.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qatar_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             quartasBDois.setIcon(produto_imagem);
 
         } else if (quartas.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             quartasBDois.setIcon(produto_imagem);
         } else if (quartas.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             quartasBDois.setIcon(produto_imagem);
         } else if (quartas.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             quartasBDois.setIcon(produto_imagem);}
        
         else if (quartas.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             quartasBDois.setIcon(iconeTime);
         }
        
         else if (quartas.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             quartasBDois.setIcon(iconeTime);
             
         }
        
         else if (quartas.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             quartasBDois.setIcon(iconeTime);
         }
         
         else if (quartas.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             quartasBDois.setIcon(iconeTime);
         }
         else if (quartas.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             quartasBDois.setIcon(iconeTime);
         }
         
         else if (quartas.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             quartasBDois.setIcon(iconeTime);
         }
         else if (quartas.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             quartasBDois.setIcon(iconeTime);
         } else if (quartas.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             quartasBDois.setIcon(iconeTime);
         }
     }
@@ -2823,113 +2828,113 @@ public class Simulacao extends javax.swing.JFrame {
         quartas = quartasCUm.getText();
 
         if (quartas.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qatar_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             quartasCUm.setIcon(produto_imagem);
 
         } else if (quartas.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             quartasCUm.setIcon(produto_imagem);
         } else if (quartas.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             quartasCUm.setIcon(produto_imagem);
         } else if (quartas.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             quartasCUm.setIcon(produto_imagem);}
        
         else if (quartas.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             quartasCUm.setIcon(iconeTime);
         }
        
         else if (quartas.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             quartasCUm.setIcon(iconeTime);
             
         }
        
         else if (quartas.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             quartasCUm.setIcon(iconeTime);
         }
         
         else if (quartas.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             quartasCUm.setIcon(iconeTime);
         }
         else if (quartas.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             quartasCUm.setIcon(iconeTime);
         }
         
         else if (quartas.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             quartasCUm.setIcon(iconeTime);
         }
         else if (quartas.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             quartasCUm.setIcon(iconeTime);
         } else if (quartas.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             quartasCUm.setIcon(iconeTime);
         }
     }
@@ -2940,113 +2945,113 @@ public class Simulacao extends javax.swing.JFrame {
         quartas = quartasCDois.getText();
 
         if (quartas.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qatar_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             quartasCDois.setIcon(produto_imagem);
 
         } else if (quartas.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             quartasCDois.setIcon(produto_imagem);
         } else if (quartas.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             quartasCDois.setIcon(produto_imagem);
         } else if (quartas.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             quartasCDois.setIcon(produto_imagem);}
        
         else if (quartas.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             quartasCDois.setIcon(iconeTime);
         }
        
         else if (quartas.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             quartasCDois.setIcon(iconeTime);
             
         }
        
         else if (quartas.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             quartasCDois.setIcon(iconeTime);
         }
         
         else if (quartas.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             quartasCDois.setIcon(iconeTime);
         }
         else if (quartas.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             quartasCDois.setIcon(iconeTime);
         }
         
         else if (quartas.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             quartasCDois.setIcon(iconeTime);
         }
         else if (quartas.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             quartasCDois.setIcon(iconeTime);
         } else if (quartas.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             quartasCDois.setIcon(iconeTime);
         }
     }
@@ -3055,113 +3060,113 @@ public class Simulacao extends javax.swing.JFrame {
         quartas = quartasDUm.getText();
 
         if (quartas.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qatar_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             quartasDUm.setIcon(produto_imagem);
 
         } else if (quartas.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             quartasDUm.setIcon(produto_imagem);
         } else if (quartas.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             quartasDUm.setIcon(produto_imagem);
         } else if (quartas.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             quartasDUm.setIcon(produto_imagem);}
        
         else if (quartas.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             quartasDUm.setIcon(iconeTime);
         }
        
         else if (quartas.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             quartasDUm.setIcon(iconeTime);
             
         }
        
         else if (quartas.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             quartasDUm.setIcon(iconeTime);
         }
         
         else if (quartas.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             quartasDUm.setIcon(iconeTime);
         }
         else if (quartas.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             quartasDUm.setIcon(iconeTime);
         }
         
         else if (quartas.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             quartasDUm.setIcon(iconeTime);
         }
         else if (quartas.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             quartasDUm.setIcon(iconeTime);
         } else if (quartas.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             quartasDUm.setIcon(iconeTime);
         }
     }
@@ -3172,113 +3177,113 @@ public class Simulacao extends javax.swing.JFrame {
         quartas = quartasDDois.getText();
 
         if (quartas.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qatar_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             quartasDDois.setIcon(produto_imagem);
 
         } else if (quartas.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             quartasDDois.setIcon(produto_imagem);
         } else if (quartas.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             quartasDDois.setIcon(produto_imagem);
         } else if (quartas.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             quartasDDois.setIcon(produto_imagem);}
        
         else if (quartas.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             quartasDDois.setIcon(iconeTime);
         }
        
         else if (quartas.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             quartasDDois.setIcon(iconeTime);
             
         }
        
         else if (quartas.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             quartasDDois.setIcon(iconeTime);
         }
         
         else if (quartas.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             quartasDDois.setIcon(iconeTime);
         }
         else if (quartas.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             quartasDDois.setIcon(iconeTime);
         }
         
         else if (quartas.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             quartasDDois.setIcon(iconeTime);
         }
         else if (quartas.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             quartasDDois.setIcon(iconeTime);
         } else if (quartas.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             quartasDDois.setIcon(iconeTime);
         }
     }
@@ -3293,113 +3298,113 @@ public class Simulacao extends javax.swing.JFrame {
         
         
         if (semiFinal.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qatar_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             semifinalAUm.setIcon(produto_imagem);
 
         } else if (semiFinal.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             semifinalAUm.setIcon(produto_imagem);
         } else if (semiFinal.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             semifinalAUm.setIcon(produto_imagem);
         } else if (semiFinal.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             semifinalAUm.setIcon(produto_imagem);}
        
         else if (semiFinal.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             semifinalAUm.setIcon(iconeTime);
         }
        
         else if (semiFinal.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             semifinalAUm.setIcon(iconeTime);
             
         }
        
         else if (semiFinal.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             semifinalAUm.setIcon(iconeTime);
         }
         
         else if (semiFinal.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             semifinalAUm.setIcon(iconeTime);
         }
         else if (semiFinal.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             semifinalAUm.setIcon(iconeTime);
         }
         
         else if (semiFinal.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             semifinalAUm.setIcon(iconeTime);
         }
         else if (semiFinal.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             semifinalAUm.setIcon(iconeTime);
         } else if (semiFinal.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             semifinalAUm.setIcon(iconeTime);
         }
     }
@@ -3412,113 +3417,113 @@ public class Simulacao extends javax.swing.JFrame {
         semiFinal = semifinalADois.getText();
 
         if (semiFinal.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qatar_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             semifinalADois.setIcon(produto_imagem);
 
         } else if (semiFinal.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             semifinalADois.setIcon(produto_imagem);
         } else if (semiFinal.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             semifinalADois.setIcon(produto_imagem);
         } else if (semiFinal.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             semifinalADois.setIcon(produto_imagem);}
        
         else if (semiFinal.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             semifinalADois.setIcon(iconeTime);
         }
        
         else if (semiFinal.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             semifinalADois.setIcon(iconeTime);
             
         }
        
         else if (semiFinal.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             semifinalADois.setIcon(iconeTime);
         }
         
         else if (semiFinal.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             semifinalADois.setIcon(iconeTime);
         }
         else if (semiFinal.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             semifinalADois.setIcon(iconeTime);
         }
         
         else if (semiFinal.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             semifinalADois.setIcon(iconeTime);
         }
         else if (semiFinal.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             semifinalADois.setIcon(iconeTime);
         } else if (semiFinal.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             semifinalADois.setIcon(iconeTime);
         }
     }
@@ -3528,113 +3533,113 @@ public class Simulacao extends javax.swing.JFrame {
         semiFinal = semifinalBUm.getText();
 
         if (semiFinal.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qatar_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             semifinalBUm.setIcon(produto_imagem);
 
         } else if (semiFinal.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             semifinalBUm.setIcon(produto_imagem);
         } else if (semiFinal.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             semifinalBUm.setIcon(produto_imagem);
         } else if (semiFinal.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             semifinalBUm.setIcon(produto_imagem);}
        
         else if (semiFinal.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             semifinalBUm.setIcon(iconeTime);
         }
        
         else if (semiFinal.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             semifinalBUm.setIcon(iconeTime);
             
         }
        
         else if (semiFinal.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             semifinalBUm.setIcon(iconeTime);
         }
         
         else if (semiFinal.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             semifinalBUm.setIcon(iconeTime);
         }
         else if (semiFinal.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             semifinalBUm.setIcon(iconeTime);
         }
         
         else if (semiFinal.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             semifinalBUm.setIcon(iconeTime);
         }
         else if (semiFinal.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             semifinalBUm.setIcon(iconeTime);
         } else if (semiFinal.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             semifinalBUm.setIcon(iconeTime);
         }
     }
@@ -3643,113 +3648,113 @@ public class Simulacao extends javax.swing.JFrame {
         semiFinal = semifinalBDois.getText();
 
         if (semiFinal.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qatar_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             semifinalBDois.setIcon(produto_imagem);
 
         } else if (semiFinal.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             semifinalBDois.setIcon(produto_imagem);
         } else if (semiFinal.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             semifinalBDois.setIcon(produto_imagem);
         } else if (semiFinal.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             semifinalBDois.setIcon(produto_imagem);}
        
         else if (semiFinal.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             semifinalBDois.setIcon(iconeTime);
         }
        
         else if (semiFinal.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             semifinalBDois.setIcon(iconeTime);
             
         }
        
         else if (semiFinal.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             semifinalBDois.setIcon(iconeTime);
         }
         
         else if (semiFinal.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             semifinalBDois.setIcon(iconeTime);
         }
         else if (semiFinal.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             semifinalBDois.setIcon(iconeTime);
         }
         
         else if (semiFinal.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             semifinalBDois.setIcon(iconeTime);
         }
         else if (semiFinal.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             quartasDDois.setIcon(iconeTime);
         } else if (semiFinal.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             semifinalBDois.setIcon(iconeTime);
         } else if (semiFinal.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             semifinalBDois.setIcon(iconeTime);
         }
     }
@@ -3761,113 +3766,113 @@ public class Simulacao extends javax.swing.JFrame {
         finals = finalTimeUm.getText();
 
         if (finals.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qatar_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             finalTimeUm.setIcon(produto_imagem);
 
         } else if (finals.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             finalTimeUm.setIcon(produto_imagem);
         } else if (finals.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             finalTimeUm.setIcon(produto_imagem);
         } else if (finals.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             finalTimeUm.setIcon(produto_imagem);}
        
         else if (finals.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             finalTimeUm.setIcon(iconeTime);
         }
        
         else if (finals.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             finalTimeUm.setIcon(iconeTime);
             
         }
        
         else if (finals.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             finalTimeUm.setIcon(iconeTime);
         }
         
         else if (finals.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             finalTimeUm.setIcon(iconeTime);
         }
         else if (finals.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             finalTimeUm.setIcon(iconeTime);
         }
         
         else if (finals.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             finalTimeUm.setIcon(iconeTime);
         }
         else if (finals.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             finalTimeUm.setIcon(iconeTime);
         } else if (finals.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             finalTimeUm.setIcon(iconeTime);
         }
     }
@@ -3879,113 +3884,113 @@ public class Simulacao extends javax.swing.JFrame {
         finals = finalTimeDois.getText();
 
         if (finals.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qatar_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             finalTimeDois.setIcon(produto_imagem);
 
         } else if (finals.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             finalTimeDois.setIcon(produto_imagem);
         } else if (finals.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             finalTimeDois.setIcon(produto_imagem);
         } else if (finals.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             finalTimeDois.setIcon(produto_imagem);}
        
         else if (finals.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             finalTimeDois.setIcon(iconeTime);
         }
        
         else if (finals.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             finalTimeDois.setIcon(iconeTime);
             
         }
        
         else if (finals.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             finalTimeDois.setIcon(iconeTime);
         }
         
         else if (finals.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             finalTimeDois.setIcon(iconeTime);
         }
         else if (finals.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             finalTimeDois.setIcon(iconeTime);
         }
         
         else if (finals.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             finalTimeDois.setIcon(iconeTime);
         }
         else if (finals.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             finalTimeDois.setIcon(iconeTime);
         } else if (finals.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             finalTimeDois.setIcon(iconeTime);
         }
     }
@@ -3997,116 +4002,117 @@ public class Simulacao extends javax.swing.JFrame {
         vencedor = timeCampeao.getText();
 
         if (vencedor.equals("Catar")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\qatar_icon_127877.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\qatar_icon_127877.png");
             timeCampeao.setIcon(produto_imagem);
 
         } else if (vencedor.equals("Equador")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ecuador_icon_127819.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\ecuador_icon_127819.png");
             timeCampeao.setIcon(produto_imagem);
         } else if (vencedor.equals("Senegal")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\senegal_icon_127802.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\senegal_icon_127802.png");
             timeCampeao.setIcon(produto_imagem);
         } else if (vencedor.equals("Holanda")) {
-            Icon produto_imagem = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\netherlands_icon_127838.png");
+            Icon produto_imagem = new ImageIcon("src\\imagens\\seleções\\netherlands_icon_127838.png");
             timeCampeao.setIcon(produto_imagem);}
        
         else if (vencedor.equals("França")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\france_icon_127830.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\france_icon_127830.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Austrália")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\australia_icon_127744.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\australia_icon_127744.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Dinamarca")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\denmark_icon_127836.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\denmark_icon_127836.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Tunísia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\tunisia_icon_127788.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\tunisia_icon_127788.png");
             timeCampeao.setIcon(iconeTime);
         }
        
         else if (vencedor.equals("Argentina")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\argentina_icon_127814.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\argentina_icon_127814.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Arábia Saudita")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\saudi_arabia_icon_127908.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("México")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\mexico_icon_127947.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\mexico_icon_127947.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Polônia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\poland_icon_127852.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\poland_icon_127852.png");
             timeCampeao.setIcon(iconeTime);
             
         }
        
         else if (vencedor.equals("Bélgica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\belgium_icon_127865.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\belgium_icon_127865.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Canadá")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\canada_icon_127925.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\canada_icon_127925.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Marrocos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\morocco_icon_127773.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\morocco_icon_127773.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Croácia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\croatia_icon_127840.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\croatia_icon_127840.png");
             timeCampeao.setIcon(iconeTime);
         }
         
         else if (vencedor.equals("Espanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\spain_icon_127825.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\spain_icon_127825.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Costa Rica")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\costa_rica_icon_127928.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\costa_rica_icon_127928.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Alemanha")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\Germany_29761.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\Germany_29761.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Japão")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\jpjapanflag_111832.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\jpjapanflag_111832.png");
             timeCampeao.setIcon(iconeTime);
         }
         else if (vencedor.equals("Portugal")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\portugal_icon_127827.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\portugal_icon_127827.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Gana")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\ghana_icon_127776.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\ghana_icon_127776.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Uruguai")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\uyuruguayflag_111803.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\uyuruguayflag_111803.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Coreia do Sul")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\south_korea_icon_127918.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\south_korea_icon_127918.png");
             timeCampeao.setIcon(iconeTime);
         }
         
         else if (vencedor.equals("Brasil")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\brazil_icon_127818.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\brazil_icon_127818.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Sérvia")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\serbia_icon_127829.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\serbia_icon_127829.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Suíça")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\switzerland_icon_127871.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\switzerland_icon_127871.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Camarões")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\cameroon_icon_127792.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\cameroon_icon_127792.png");
             timeCampeao.setIcon(iconeTime);
         }
         else if (vencedor.equals("Inglaterra")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbengenglandflag_111695.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbengenglandflag_111695.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Irã")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\iran_icon_127909.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\iran_icon_127909.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("Estados Unidos")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\united_states_icon_127943.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\united_states_icon_127943.png");
             timeCampeao.setIcon(iconeTime);
         } else if (vencedor.equals("País de Gales")) {
-            Icon iconeTime = new ImageIcon("C:\\Users\\Desktop\\Documents\\Projeto\\CustomWorldCup\\CopaDoMundo\\src\\imagens\\seleções\\gbwlswalesflag_111786.png");
+            Icon iconeTime = new ImageIcon("src\\imagens\\seleções\\gbwlswalesflag_111786.png");
             timeCampeao.setIcon(iconeTime);
         }
     }
+
     
     
 }
