@@ -90,24 +90,10 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/imagens/sele&#xe7;&#xf5;es/cameroon_icon_127792.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Simula&#xe7;&#xe3;o Oficial"/>
+                <Property name="text" type="java.lang.String" value="Simula&#xe7;&#xe3;o"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="simulacaoOficialActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="simulacaoNaoOficial">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Ubuntu Mono" size="18" style="1"/>
-                </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/sele&#xe7;&#xf5;es/switzerland_icon_127871.png"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Simula&#xe7;&#xe3;o N&#xe3;o Oficial"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="simulacaoNaoOficialActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>

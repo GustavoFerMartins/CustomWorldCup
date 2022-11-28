@@ -54,7 +54,6 @@ public class TelaMenu extends javax.swing.JFrame {
         gruposOficiais = new javax.swing.JMenuItem();
         simulacao = new javax.swing.JMenu();
         simulacaoOficial = new javax.swing.JMenuItem();
-        simulacaoNaoOficial = new javax.swing.JMenuItem();
         configuracao = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -230,23 +229,13 @@ public class TelaMenu extends javax.swing.JFrame {
 
         simulacaoOficial.setFont(new java.awt.Font("Ubuntu Mono", 1, 18)); // NOI18N
         simulacaoOficial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/cameroon_icon_127792.png"))); // NOI18N
-        simulacaoOficial.setText("Simulação Oficial");
+        simulacaoOficial.setText("Simulação");
         simulacaoOficial.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 simulacaoOficialActionPerformed(evt);
             }
         });
         simulacao.add(simulacaoOficial);
-
-        simulacaoNaoOficial.setFont(new java.awt.Font("Ubuntu Mono", 1, 18)); // NOI18N
-        simulacaoNaoOficial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seleções/switzerland_icon_127871.png"))); // NOI18N
-        simulacaoNaoOficial.setText("Simulação Não Oficial");
-        simulacaoNaoOficial.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                simulacaoNaoOficialActionPerformed(evt);
-            }
-        });
-        simulacao.add(simulacaoNaoOficial);
 
         jMenuBar1.add(simulacao);
 
@@ -330,12 +319,6 @@ public class TelaMenu extends javax.swing.JFrame {
         simularCopaOficial.setVisible(true);
     }//GEN-LAST:event_simulacaoOficialActionPerformed
 
-    private void simulacaoNaoOficialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simulacaoNaoOficialActionPerformed
-        SimulacaoNaoOficial simularNaoOficial = new SimulacaoNaoOficial();
-        telaFundo.add(simularNaoOficial);
-        simularNaoOficial.setVisible(true);
-    }//GEN-LAST:event_simulacaoNaoOficialActionPerformed
-
     private void logOffActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logOffActionPerformed
         TelaLogin login = new TelaLogin();
         login.setVisible(true);
@@ -402,7 +385,6 @@ public class TelaMenu extends javax.swing.JFrame {
     private javax.swing.JMenu sair;
     private javax.swing.JMenuItem selecoes;
     private javax.swing.JMenu simulacao;
-    private javax.swing.JMenuItem simulacaoNaoOficial;
     private javax.swing.JMenuItem simulacaoOficial;
     private javax.swing.JDesktopPane telaFundo;
     private javax.swing.JMenu times;
